@@ -1,4 +1,6 @@
 #include <stdint.h>
+#include <stdio.h>
+#include <math.h>
 
 #include "LED_Group_Collection.h"
 
@@ -30,6 +32,10 @@ void set_led_group(LED_Group_Collection_t* led_group_collection, LED_Group_t led
  * @param led_group_collection 
  */
 void set_led_group_brightnesses(LED_Group_Collection_t* led_group_collection, float load_cell_voltage) {
-    set_group_brightness(get_led_group(led_group_collection, LEFT), 45);
-    set_group_brightness(get_led_group(led_group_collection, RIGHT), 55);
+
+    uint8_t group_one_brightness = (uint8_t) round((((COMMON_MODE - load_cell_voltage) / (5)) + 0.5) * 255);
+    uint8_t group_two_brightness = (255 - group_one_brightness);
+
+    set_group_brightness(get_led_group(led_group_collection, LEFT), group_one_brightness);
+    set_group_brightness(get_led_group(led_group_collection, RIGHT), group_two_brightness);
 }

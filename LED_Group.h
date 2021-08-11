@@ -9,15 +9,15 @@ typedef enum {
 } Direction_t;
 
 typedef struct {
-    int8_t group_pin_number;
+    uint8_t group_pin_number;
     Direction_t direction;
-    int8_t group_brightness;
+    uint8_t group_brightness;
 } LED_Group_t;
 
-int8_t get_group_brightness(const LED_Group_t* const led_group);
-void set_group_brightness(LED_Group_t* const led_group, int8_t group_brightness);
+uint8_t get_group_brightness(const LED_Group_t* const led_group);
+void set_group_brightness(LED_Group_t* const led_group, uint8_t group_brightness);
 
-int8_t get_group_pin_number(const LED_Group_t* const led_group);
+uint8_t get_group_pin_number(const LED_Group_t* const led_group);
 
 Direction_t get_group_direction(const LED_Group_t* const led_group);
 

@@ -8,7 +8,7 @@
  * @param led_group 
  * @return int8_t 
  */
-int8_t get_group_brightness(const LED_Group_t* const led_group) {
+uint8_t get_group_brightness(const LED_Group_t* const led_group) {
     return led_group->group_brightness;
 }
 
@@ -18,7 +18,7 @@ int8_t get_group_brightness(const LED_Group_t* const led_group) {
  * @param led_group 
  * @param group_brightness 
  */
-void set_group_brightness(LED_Group_t* const led_group, int8_t group_brightness) {
+void set_group_brightness(LED_Group_t* const led_group, uint8_t group_brightness) {
     led_group->group_brightness = group_brightness;
 }
 
@@ -28,7 +28,7 @@ void set_group_brightness(LED_Group_t* const led_group, int8_t group_brightness)
  * @param led_group 
  * @return int8_t 
  */
-int8_t get_group_pin_number(const LED_Group_t* const led_group) {
+uint8_t get_group_pin_number(const LED_Group_t* const led_group) {
     return led_group->group_pin_number;
 }
 
