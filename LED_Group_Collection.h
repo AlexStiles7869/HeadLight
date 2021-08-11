@@ -1,8 +1,9 @@
 #ifndef LED_GROUP_COLLECTION_H
 #define LED_GROUP_COLLECTION_H
 
-#define COMMON_MODE 2.5
 #include "LED_Group.h"
+
+#define COMMON_MODE 2.5
 
 typedef struct {
     LED_Group_t led_groups[2];

@@ -27,7 +27,9 @@ bool poll_sensor(Load_Cell_t* load_cell) {
         // Update the recorded voltage of the load cell
         load_cell->voltage = read_voltage;
         // Update the strain
-        load_cell->strain = round(((load_cell->voltage - COMMON_MODE)/(load_cell->max_voltage)) * load_cell->strain_range);
+        load_cell->strain = round(((load_cell->voltage - COMMON_MODE) / (load_cell->max_voltage)) * load_cell->strain_range);
+        // Update the angle
+        load_cell->angle = round(((load_cell->voltage - COMMON_MODE) / (load_cell->max_voltage)) * load_cell->angle_range);
         deviation = true;
     }
 

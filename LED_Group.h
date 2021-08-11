@@ -1,8 +1,9 @@
 #ifndef LED_GROUP_H
 #define LED_GROUP_H
 
-#define COMMON_MODE 2.5
 #include <stdint.h>
+
+#define COMMON_MODE 2.5
 
 typedef enum {
     LEFT = 0,
