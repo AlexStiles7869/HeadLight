@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "led_group_collection.h": "c",
+        "chrono": "c",
+        "complex": "c",
+        "stdint.h": "c"
+    }
+}
