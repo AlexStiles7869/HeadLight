@@ -3,6 +3,7 @@
         "led_group_collection.h": "c",
         "chrono": "c",
         "complex": "c",
-        "stdint.h": "c"
+        "stdint.h": "c",
+        "led_group.h": "c"
     }
 }

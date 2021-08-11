@@ -2,6 +2,8 @@
 #include <stdbool.h>
 #include <math.h>
 
+#include <stdio.h>
+
 #include "Load_Cell.h"
 
 /**
@@ -24,29 +26,10 @@ bool poll_sensor(Load_Cell_t* load_cell) {
     if (fabsf(load_cell->voltage - read_voltage) > load_cell->deviation_voltage_breakpoint) {
         // Update the recorded voltage of the load cell
         load_cell->voltage = read_voltage;
+        // Update the strain
+        load_cell->strain = round(((load_cell->voltage - COMMON_MODE)/(load_cell->max_voltage)) * load_cell->strain_range);
         deviation = true;
     }
 
     return deviation;
-}
-
-/**
- * @brief Get the voltage object
- * 
- * @param load_cell 
- * @return float 
- */
-float get_voltage(Load_Cell_t* load_cell) {
-    return load_cell->voltage;
-}
-
-/**
- * @brief Set the voltage object
- * 
- * @param load_cell 
- * @param voltage 
- * @return float 
- */
-void set_voltage(Load_Cell_t* load_cell, float voltage) {
-    load_cell->voltage = voltage;
 }

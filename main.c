@@ -3,6 +3,8 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
+#define COMMON_MODE 2.5
+
 #include "LED_Group_Collection.h"
 #include "LED_Group.h"
 #include "Load_Cell.h"
@@ -35,7 +37,7 @@ LED_Group_Collection_t init_led_group_collection() {
  * @return Load_Cell_t 
  */
 Load_Cell_t init_load_cell() {
-    Load_Cell_t load_cell = {.pin_number = LOAD_CELL_ANALOG_PIN, .voltage = 0, .deviation_voltage_breakpoint = DEVIATION_VOLTAGE_BREAKPOINT};
+    Load_Cell_t load_cell = {.pin_number = LOAD_CELL_ANALOG_PIN, .voltage = 0, .deviation_voltage_breakpoint = DEVIATION_VOLTAGE_BREAKPOINT, .max_voltage = 5, .strain_range = 200};
 
     return load_cell;
 }
@@ -45,6 +47,7 @@ int main(void) {
     TODO:
     - Determine mathematical formula for brightness of LED groups given load cell voltage - DONE
     - Remove magic numbers from formula
+    - Make sure using getters and setters where appropriate
     - Clean up pointer usage for LED_Group_t and LED_Group_Collection_t
     - Write appropriate descriptions of all functions
     - Attempt to compile specifically for Arduino
@@ -63,6 +66,15 @@ int main(void) {
     
     printf("Load Cell Voltage: %.1f/5 V\n", load_cell.voltage);
     printf("Left Group Brightness: %d/255 | Right Group Brightness: %d/255\n", get_group_brightness(get_led_group(&led_group_collection, LEFT)), get_group_brightness(get_led_group(&led_group_collection, RIGHT)));
+    printf("Load Cell Strain: %d grams\n", load_cell.strain);
+
+    if (poll_sensor(&load_cell)) {
+        set_led_group_brightnesses(&led_group_collection, load_cell.voltage);
+
+        printf("Load Cell Voltage: %.1f/5 V\n", load_cell.voltage);
+        printf("Left Group Brightness: %d/255 | Right Group Brightness: %d/255\n", get_group_brightness(get_led_group(&led_group_collection, LEFT)), get_group_brightness(get_led_group(&led_group_collection, RIGHT)));
+        printf("Load Cell Strain: %d grams\n", load_cell.strain);
+    }
 
     return EXIT_SUCCESS;
 }

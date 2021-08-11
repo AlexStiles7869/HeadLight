@@ -1,6 +1,7 @@
 #ifndef LED_GROUP_H
 #define LED_GROUP_H
 
+#define COMMON_MODE 2.5
 #include <stdint.h>
 
 typedef enum {
