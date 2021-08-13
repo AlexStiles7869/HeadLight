@@ -1,9 +1,23 @@
+/**
+ * @file LED_Group.c
+ * @author your name (you@domain.com)
+ * @brief Contains the source code for a LED group.
+ * @version 0.1
+ * @date 2021-08-13
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ * This source file provides the functionality to get and set the group's brightness (from 0 to 255) as required by the Arduino's PWM output.
+ * It also provides getters for the group pin number and direction.
+ * 
+ */
+
 #include <stdint.h>
 
 #include "LED_Group.h"
 
 /**
- * @brief Get the group brightness object
+ * @brief Get the group brightness
  * 
  * @param led_group 
  * @return int8_t 
@@ -13,7 +27,7 @@ uint8_t get_group_brightness(const LED_Group_t* const led_group) {
 }
 
 /**
- * @brief Set the group brightness object
+ * @brief Set the group brightness
  * 
  * @param led_group 
  * @param group_brightness 
@@ -23,7 +37,7 @@ void set_group_brightness(LED_Group_t* const led_group, uint8_t group_brightness
 }
 
 /**
- * @brief Get the group pin number object
+ * @brief Get the group pin number
  * 
  * @param led_group 
  * @return int8_t 
@@ -33,7 +47,7 @@ uint8_t get_group_pin_number(const LED_Group_t* const led_group) {
 }
 
 /**
- * @brief Get the group direction object
+ * @brief Get the group direction
  * 
  * @param led_group 
  * @return Direction_t 

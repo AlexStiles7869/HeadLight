@@ -4,6 +4,8 @@
         "chrono": "c",
         "complex": "c",
         "stdint.h": "c",
-        "led_group.h": "c"
+        "led_group.h": "c",
+        "load_cell.h": "c",
+        "cmath": "c"
     }
 }
