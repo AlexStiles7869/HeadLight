@@ -34,11 +34,14 @@ LED_Group_Collection_t led_group_collection;
 Load_Cell_t load_cell;
 
 float read_load_cell_voltage() {
-    return (analogRead(LOAD_CELL_ANALOG_PIN) / ARDUINO_PWM_READ_RANGE) * ARDUINO_MAX_VOLTAGE;
+    return (analogRead(LOAD_CELL_ANALOG_PIN) / (float) ARDUINO_PWM_READ_RANGE) * ARDUINO_MAX_VOLTAGE;
 }
 
 void update_led_group_pwm_signals() {
     set_led_group_brightnesses(&led_group_collection, &load_cell);
+
+    Serial.println("Left: " + String(get_group_brightness(get_led_group(&led_group_collection, LEFT))));
+    Serial.println("Right: " + String(get_group_brightness(get_led_group(&led_group_collection, RIGHT))));
     
     analogWrite(LEFT_GROUP_PIN, get_group_brightness(get_led_group(&led_group_collection, LEFT)));
     analogWrite(RIGHT_GROUP_PIN, get_group_brightness(get_led_group(&led_group_collection, RIGHT)));
@@ -47,8 +50,8 @@ void update_led_group_pwm_signals() {
 void setup() {
     Serial.begin(9600);
 
-    LED_Group_Collection_t led_group_collection = init_led_group_collection(LEFT_GROUP_PIN, RIGHT_GROUP_PIN);
-    Load_Cell_t load_cell = init_load_cell(LOAD_CELL_ANALOG_PIN);
+    led_group_collection = init_led_group_collection(LEFT_GROUP_PIN, RIGHT_GROUP_PIN);
+    load_cell = init_load_cell(LOAD_CELL_ANALOG_PIN);
 
     pinMode(LOAD_CELL_ANALOG_PIN, INPUT);
 
@@ -58,8 +61,12 @@ void setup() {
 
 void loop() {
     if (poll_sensor(&load_cell, read_load_cell_voltage())) {
-        update_led_group_pwm_signals();
+         update_led_group_pwm_signals();
+
+      Serial.println("Load Cell Voltage: " + String(load_cell.voltage));
+      Serial.println("Load Cell Strain: " + String(load_cell.strain));
+      Serial.println("Load Cell Angle: " + String(load_cell.angle));
     }
 
-    delay(2000);
+    delay(50);
 }

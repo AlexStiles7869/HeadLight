@@ -14,5 +14,5 @@
 #include "voltage.h"
 
 float map_voltage_to_range(float voltage, float max_voltage, float range) {
-    return ((voltage - COMMON_MODE_VOLTAGE) / max_voltage) * range;
+    return ((voltage - 2.5) / max_voltage) * range;
 }

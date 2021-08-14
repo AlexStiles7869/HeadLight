@@ -27,7 +27,7 @@
  */
 Load_Cell_t init_load_cell(uint8_t load_cell_pin_number) {
     Load_Cell_t load_cell = {
-        .voltage = 0, 
+        .voltage = COMMON_MODE_VOLTAGE, 
         .strain = 0, 
         .angle = 0, 
         .pin_number = load_cell_pin_number, 
