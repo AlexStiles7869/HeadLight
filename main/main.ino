@@ -25,7 +25,7 @@
 #include "LED_Group.h"
 #include "Load_Cell.h"
 
-#define LOAD_CELL_ANALOG_PIN 0 // Should be A0, but this works for testing as well so leaving as 0.
+#define LOAD_CELL_ANALOG_PIN 0
 
 #define LEFT_GROUP_PIN 5
 #define RIGHT_GROUP_PIN 6
