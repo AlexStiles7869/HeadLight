@@ -14,6 +14,7 @@
 
 #include <stdint.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
 
 #include "LED_Group_Collection.h"
@@ -26,7 +27,7 @@
  * @return LED_Group_Collection_t 
  */
 LED_Group_Collection_t init_led_group_collection(uint8_t left_pin_number, uint8_t right_pin_number) {
-    LED_Group_Collection_t led_group_collection = {0}; // {0} is the universal zero initialiser
+    LED_Group_Collection_t led_group_collection = {.led_groups = {0}, .mode = FOLLOW, .mode_changed = false};
 
     LED_Group_t led_group_one = {
         .group_pin_number = left_pin_number, 
@@ -75,8 +76,18 @@ void set_led_group(LED_Group_Collection_t* led_group_collection, LED_Group_t led
  */
 void set_led_group_brightnesses(LED_Group_Collection_t* led_group_collection, Load_Cell_t* load_cell) {
 
-    uint8_t group_one_brightness = (uint8_t) round((map_voltage_to_range(load_cell->voltage, load_cell->max_voltage, 1) + 0.5) * ARDUINO_PWM_WRITE_RANGE);
-    uint8_t group_two_brightness = (ARDUINO_PWM_WRITE_RANGE - group_one_brightness);
+    led_group_collection->mode_changed = false;
+
+    uint8_t group_one_brightness;
+    uint8_t group_two_brightness;
+
+    if (led_group_collection->mode == FOLLOW) {
+        group_one_brightness = (uint8_t) round((map_voltage_to_range(load_cell->voltage, load_cell->max_voltage, 1) + 0.5) * ARDUINO_PWM_WRITE_RANGE);
+        group_two_brightness = (ARDUINO_PWM_WRITE_RANGE - group_one_brightness);
+    } else if (led_group_collection->mode == FULL) {
+        group_one_brightness = 255;
+        group_two_brightness = 255;
+    }
 
     set_group_brightness(get_led_group(led_group_collection, LEFT), group_one_brightness);
     set_group_brightness(get_led_group(led_group_collection, RIGHT), group_two_brightness);
