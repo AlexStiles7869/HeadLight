@@ -31,7 +31,7 @@
 #define LEFT_GROUP_PIN 5
 #define RIGHT_GROUP_PIN 6
 
-#define BUTTON_PIN 7
+#define BUTTON_PIN 8
 
 LED_Group_Collection_t led_group_collection;
 Load_Cell_t load_cell;
@@ -70,6 +70,7 @@ void setup() {
     button = init_button(BUTTON_PIN, &callbackFunction);
 
     pinMode(LOAD_CELL_ANALOG_PIN, INPUT);
+    pinMode(BUTTON_PIN, INPUT_PULLUP);
 
     pinMode(LEFT_GROUP_PIN, OUTPUT);
     pinMode(RIGHT_GROUP_PIN, OUTPUT);

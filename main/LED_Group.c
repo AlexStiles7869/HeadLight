@@ -1,6 +1,6 @@
 /**
  * @file LED_Group.c
- * @author your name (you@domain.com)
+ * @author Alex Stiles
  * @brief Contains the source code for a LED group.
  * @version 0.1
  * @date 2021-08-13
