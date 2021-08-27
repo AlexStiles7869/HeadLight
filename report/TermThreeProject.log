@@ -1,8 +1,8 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2021.1.13)  27 AUG 2021 13:50
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2021.1.13)  27 AUG 2021 14:18
  restricted system commands enabled.
  file:line:error style messages enabled.
-**"/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/report/TermThreeProject.tex"
-("/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/report/TermThreeProject.tex"
+**"/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex"
+("/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex"
 LaTeX2e <2020-02-02> patch level 5
 Lua module: luaotfload-main 2020-05-06 3.14 luaotfload entry point
 Lua module: luaotfload-init 2020-05-06 3.14 luaotfload submodule / initialization
@@ -1016,9 +1016,9 @@ Package fontspec Info: Font family 'IosevkaSS15(1)' created for font 'Iosevka
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/IosevkaSS15(1)/m/n on input line 14.
+(Font)                  OT1/cmtt/m/n --> TU/IosevkaSS15(1)/m/n on input line 15.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/IosevkaSS15(1)/bx/n on input line 14.
+(Font)                  OT1/cmtt/m/n --> TU/IosevkaSS15(1)/bx/n on input line 15.
 luaotfload | aux : font no 53 (nil) does not define feature smcp for script latn with language dflt
 luaotfload | aux : font no 54 (nil) does not define feature smcp for script latn with language dflt
 luaotfload | aux : font no 55 (nil) does not define feature smcp for script latn with language dflt
@@ -1068,11 +1068,11 @@ Package fontspec Info: Font family 'LatinModernSans(1)' created for font
 (fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
 
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/LatinModernSans(1)/m/n on input line 16.
+(Font)                  OT1/cmr/m/n --> TU/LatinModernSans(1)/m/n on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/LatinModernSans(1)/m/it on input line 16.
+(Font)                  OT1/cmr/m/it --> TU/LatinModernSans(1)/m/it on input line 17.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/LatinModernSans(1)/b/n on input line 16.
+(Font)                  OT1/cmr/bx/n --> TU/LatinModernSans(1)/b/n on input line 17.
 
 Package fontspec Info: Could not resolve font "LatinModernMath/B" (it probably
 (fontspec)             doesn't exist).
@@ -1115,13 +1115,13 @@ Package fontspec Info: Font family 'LatinModernMath(1)' created for font
 (fontspec)             \__um_luatex_copy_fontdimens: 
 
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 17.
+(Font)              `operators' in the math version `normal' on input line 18.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/LatinModernMath(1)/m/n on input line 17.
+(Font)                  OT1/cmr/m/n --> TU/LatinModernMath(1)/m/n on input line 18.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 17.
+(Font)              `operators' in the math version `bold' on input line 18.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/LatinModernMath(1)/b/n on input line 17.
+(Font)                  OT1/cmr/bx/n --> TU/LatinModernMath(1)/b/n on input line 18.
 
 Package fontspec Info: LatinModernMath scale = 1.0001.
 
@@ -1177,13 +1177,13 @@ Package fontspec Info: Font family 'LatinModernMath(2)' created for font
 (fontspec)             21\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 17.
+(Font)              `symbols' in the math version `normal' on input line 18.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> TU/LatinModernMath(2)/m/n on input line 17.
+(Font)                  OMS/cmsy/m/n --> TU/LatinModernMath(2)/m/n on input line 18.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 17.
+(Font)              `symbols' in the math version `bold' on input line 18.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> TU/LatinModernMath(2)/b/n on input line 17.
+(Font)                  OMS/cmsy/b/n --> TU/LatinModernMath(2)/b/n on input line 18.
 
 Package fontspec Info: LatinModernMath scale = 0.9999.
 
@@ -1227,28 +1227,62 @@ Package fontspec Info: Font family 'LatinModernMath(3)' created for font
 (fontspec)             \fontdimen 13\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 17.
+(Font)              `largesymbols' in the math version `normal' on input line 18.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> TU/LatinModernMath(3)/m/n on input line 17.
+(Font)                  OMX/cmex/m/n --> TU/LatinModernMath(3)/m/n on input line 18.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 17.
+(Font)              `largesymbols' in the math version `bold' on input line 18.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> TU/LatinModernMath(3)/b/n on input line 17.
+(Font)                  OMX/cmex/m/n --> TU/LatinModernMath(3)/b/n on input line 18.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 10.00107pt on input line 17.
+(Font)              scaled to size 10.00107pt on input line 18.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 7.00075pt on input line 17.
+(Font)              scaled to size 7.00075pt on input line 18.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 17.
+(Font)              scaled to size 5.00053pt on input line 18.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 17.
+(Font)              scaled to size 9.99893pt on input line 18.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 17.
+(Font)              scaled to size 6.99925pt on input line 18.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 17.
+(Font)              scaled to size 4.99947pt on input line 18.
 \@quotelevel=\count478
 \@quotereset=\count479
- (./TermThreeProject.aux)
+ (./TermThreeProject.aux
+
+LaTeX Warning: Label `Listing:1' multiply defined.
+
+
+LaTeX Warning: Label `Listing:1' multiply defined.
+
+
+LaTeX Warning: Label `Listing:1' multiply defined.
+
+
+LaTeX Warning: Label `Listing:1' multiply defined.
+
+
+LaTeX Warning: Label `Listing:1' multiply defined.
+
+
+LaTeX Warning: Label `Listing:1' multiply defined.
+
+
+LaTeX Warning: Label `Listing:1' multiply defined.
+
+
+LaTeX Warning: Label `Listing:1' multiply defined.
+
+
+LaTeX Warning: Label `Listing:1' multiply defined.
+
+
+LaTeX Warning: Label `Listing:1' multiply defined.
+
+
+LaTeX Warning: Label `Listing:1' multiply defined.
+
+)
 \openout1 = TermThreeProject.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
@@ -1400,13 +1434,12 @@ Package biblatex Info: Automatic encoding selection.
 
 \openout3 = TermThreeProject.bcf
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'TermThreeProject.bbl' not found.
-
-No file TermThreeProject.bbl.
+Package biblatex Info: ... file 'TermThreeProject.bbl' found.
+ (./TermThreeProject.bbl)
 Package biblatex Info: Reference section=0 on input line 69.
 Package biblatex Info: Reference segment=0 on input line 69.
 Package hyperref Info: Link coloring ON on input line 69.
-(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/share/texlive/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
@@ -1418,6 +1451,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 69.
 LaTeX Info: Redefining \pageref on input line 69.
 LaTeX Info: Redefining \nameref on input line 69.
+ (./TermThreeProject.out) (./TermThreeProject.out)
 \@outlinefile=\write4
 
 \openout4 = TermThreeProject.out
@@ -1447,203 +1481,140 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `IosevkaSS15' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<headlamp-project-concept.png, id=4, 289.08pt x 204.2832pt>
+<headlamp-project-concept.png, id=80, 289.08pt x 204.2832pt>
 File: headlamp-project-concept.png Graphic file (type png)
 <use headlamp-project-concept.png>
 Package luatex.def Info: headlamp-project-concept.png  used on input line 85.
 (luatex.def)             Requested size: 362.77264pt x 256.37263pt.
  [1
 
-{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}<./headlamp-project-concept.png>]
+{/usr/share/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}<./headlamp-project-concept.png>] (./TermThreeProject.toc)
 \tf@toc=\write5
 
 \openout5 = TermThreeProject.toc
+ (./TermThreeProject.lof)
 \tf@lof=\write6
 
 \openout6 = TermThreeProject.lof
+ (./TermThreeProject.lot)
 \tf@lot=\write7
 
 \openout7 = TermThreeProject.lot
-
-
-Package hyperref Warning: old lol file detected, not used; run LaTeX again.
-
+ (./TermThreeProject.lol)
 \tf@lol=\write8
 
 \openout8 = TermThreeProject.lol
-[2]
+ [2]
 File: headlamp-project-concept.png Graphic file (type png)
 <use headlamp-project-concept.png>
-Package luatex.def Info: headlamp-project-concept.png  used on input line 108.
+Package luatex.def Info: headlamp-project-concept.png  used on input line 110.
 (luatex.def)             Requested size: 362.77264pt x 256.37263pt.
-
-
-LaTeX Warning: Reference `fig:inamp' on page 1 undefined on input line 120.
-
-<inamp.png, id=17, 1738.495pt x 744.7825pt>
+<inamp.png, id=148, 1738.495pt x 744.7825pt>
 File: inamp.png Graphic file (type png)
 <use inamp.png>
-Package luatex.def Info: inamp.png  used on input line 124.
+Package luatex.def Info: inamp.png  used on input line 126.
 (luatex.def)             Requested size: 483.69687pt x 207.2194pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1]
-
-LaTeX Warning: Reference `fig:vref' on page 2 undefined on input line 128.
-
-<vref.png, id=31, 634.37pt x 498.86375pt>
+<vref.png, id=156, 634.37pt x 498.86375pt>
 File: vref.png Graphic file (type png)
 <use vref.png>
-Package luatex.def Info: vref.png  used on input line 132.
+Package luatex.def Info: vref.png  used on input line 134.
 (luatex.def)             Requested size: 362.77264pt x 285.29156pt.
-<ledarray.png, id=32, 1625.07124pt x 668.4975pt>
+<ledarray.png, id=157, 1625.07124pt x 668.4975pt>
 File: ledarray.png Graphic file (type png)
 <use ledarray.png>
-Package luatex.def Info: ledarray.png  used on input line 140.
+Package luatex.def Info: ledarray.png  used on input line 142.
 (luatex.def)             Requested size: 362.77264pt x 149.23239pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2<./inamp.png><./vref.png>]
-
-LaTeX Warning: Citation 'emc' on page 3 undefined on input line 147.
-
-
-LaTeX Warning: Reference `eq:g4' on page 3 undefined on input line 153.
-
-
-LaTeX Warning: Citation 'ti:sloa034' on page 3 undefined on input line 153.
-
-
-LaTeX Warning: Citation 'htc:tal221' on page 3 undefined on input line 153.
-
-[3<./ledarray.png>] [4]
-
-LaTeX Warning: Empty bibliography on input line 185.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/report/TermThreeProject.tex:199: Misplaced \noalign.
-\bottomrule ->\noalign 
-                       {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global...
-l.199             \end{tabularx}
-                              
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/report/TermThreeProject.tex:199: Misplaced \noalign.
-\bottomrule ->\noalign 
-                       {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global...
-l.199             \end{tabularx}
-                              
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/report/TermThreeProject.tex:199: Misplaced \noalign.
-\bottomrule ->\noalign 
-                       {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global...
-l.199             \end{tabularx}
-                              
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-[5] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+ [2<./inamp.png><./vref.png>] [3<./ledarray.png>] [4] [5] [6] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
-) (../HeadLight/main/button.c) (../HeadLight/main/button.h [6]) (../HeadLight/main/LED_Group.c [7]) (../HeadLight/main/LED_Group.h [8]) (../HeadLight/main/LED_Group_Collection.c [9]) (../HeadLight/main/LED_Group_Collection.h [10]) (../HeadLight/main/Load_Cell.c [11]) (../HeadLight/main/Load_Cell.h [12]) (../HeadLight/main/main.c [13]) (../HeadLight/main/voltage.c) (../HeadLight/main/voltage.h) [14] (../HeadLight/main/main.ino [15]) [16]
-<schematic.pdf, id=780, 845.04684pt x 597.50787pt>
+) (../main/button.c) (../main/button.h [7]) (../main/LED_Group.c [8]) (../main/LED_Group.h [9]) (../main/LED_Group_Collection.c [10]) (../main/LED_Group_Collection.h [11]) (../main/Load_Cell.c [12]) (../main/Load_Cell.h [13]) (../main/main.c [14]) (../main/voltage.c) (../main/voltage.h) [15] (../main/main.ino [16]) [17]
+<schematic.pdf, id=921, 845.04684pt x 597.50787pt>
 File: schematic.pdf Graphic file (type pdf)
 <use schematic.pdf>
-Package luatex.def Info: schematic.pdf  used on input line 363.
+Package luatex.def Info: schematic.pdf  used on input line 380.
 (luatex.def)             Requested size: 845.04478pt x 597.50641pt.
 File: schematic.pdf Graphic file (type pdf)
 <use schematic.pdf>
-Package luatex.def Info: schematic.pdf  used on input line 363.
+Package luatex.def Info: schematic.pdf  used on input line 380.
 (luatex.def)             Requested size: 845.04478pt x 597.50641pt.
-<schematic.pdf, id=783, page=1, 845.04684pt x 597.50787pt>
+<schematic.pdf, id=924, page=1, 845.04684pt x 597.50787pt>
 File: schematic.pdf Graphic file (type pdf)
 <use schematic.pdf, page 1>
-Package luatex.def Info: schematic.pdf , page1 used on input line 363.
+Package luatex.def Info: schematic.pdf , page1 used on input line 380.
 (luatex.def)             Requested size: 845.04478pt x 597.50641pt.
 File: schematic.pdf Graphic file (type pdf)
 <use schematic.pdf, page 1>
-Package luatex.def Info: schematic.pdf , page1 used on input line 363.
+Package luatex.def Info: schematic.pdf , page1 used on input line 380.
 (luatex.def)             Requested size: 845.08347pt x 597.53375pt.
- [17]
+ [18]
 File: schematic.pdf Graphic file (type pdf)
 <use schematic.pdf, page 1>
-Package luatex.def Info: schematic.pdf , page1 used on input line 363.
-(luatex.def)             Requested size: 845.08347pt x 597.53375pt.
-File: schematic.pdf Graphic file (type pdf)
-<use schematic.pdf, page 1>
-Package luatex.def Info: schematic.pdf , page1 used on input line 363.
+Package luatex.def Info: schematic.pdf , page1 used on input line 380.
 (luatex.def)             Requested size: 845.08347pt x 597.53375pt.
 File: schematic.pdf Graphic file (type pdf)
 <use schematic.pdf, page 1>
-Package luatex.def Info: schematic.pdf , page1 used on input line 363.
+Package luatex.def Info: schematic.pdf , page1 used on input line 380.
 (luatex.def)             Requested size: 845.08347pt x 597.53375pt.
- [18<./schematic.pdf>]
-<pcb.pdf, id=987, 845.04684pt x 597.50787pt>
+File: schematic.pdf Graphic file (type pdf)
+<use schematic.pdf, page 1>
+Package luatex.def Info: schematic.pdf , page1 used on input line 380.
+(luatex.def)             Requested size: 845.08347pt x 597.53375pt.
+ [19<./schematic.pdf>]
+<pcb.pdf, id=1128, 845.04684pt x 597.50787pt>
 File: pcb.pdf Graphic file (type pdf)
 <use pcb.pdf>
-Package luatex.def Info: pcb.pdf  used on input line 367.
+Package luatex.def Info: pcb.pdf  used on input line 384.
 (luatex.def)             Requested size: 845.04478pt x 597.50641pt.
 File: pcb.pdf Graphic file (type pdf)
 <use pcb.pdf>
-Package luatex.def Info: pcb.pdf  used on input line 367.
+Package luatex.def Info: pcb.pdf  used on input line 384.
 (luatex.def)             Requested size: 845.04478pt x 597.50641pt.
-<pcb.pdf, id=990, page=1, 845.04684pt x 597.50787pt>
+<pcb.pdf, id=1131, page=1, 845.04684pt x 597.50787pt>
 File: pcb.pdf Graphic file (type pdf)
 <use pcb.pdf, page 1>
-Package luatex.def Info: pcb.pdf , page1 used on input line 367.
+Package luatex.def Info: pcb.pdf , page1 used on input line 384.
 (luatex.def)             Requested size: 845.04478pt x 597.50641pt.
 File: pcb.pdf Graphic file (type pdf)
 <use pcb.pdf, page 1>
-Package luatex.def Info: pcb.pdf , page1 used on input line 367.
+Package luatex.def Info: pcb.pdf , page1 used on input line 384.
 (luatex.def)             Requested size: 845.08347pt x 597.53375pt.
- [19]
+ [20]
 File: pcb.pdf Graphic file (type pdf)
 <use pcb.pdf, page 1>
-Package luatex.def Info: pcb.pdf , page1 used on input line 367.
-(luatex.def)             Requested size: 845.08347pt x 597.53375pt.
-File: pcb.pdf Graphic file (type pdf)
-<use pcb.pdf, page 1>
-Package luatex.def Info: pcb.pdf , page1 used on input line 367.
+Package luatex.def Info: pcb.pdf , page1 used on input line 384.
 (luatex.def)             Requested size: 845.08347pt x 597.53375pt.
 File: pcb.pdf Graphic file (type pdf)
 <use pcb.pdf, page 1>
-Package luatex.def Info: pcb.pdf , page1 used on input line 367.
+Package luatex.def Info: pcb.pdf , page1 used on input line 384.
 (luatex.def)             Requested size: 845.08347pt x 597.53375pt.
- [20<./pcb.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 402.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 402.
+File: pcb.pdf Graphic file (type pdf)
+<use pcb.pdf, page 1>
+Package luatex.def Info: pcb.pdf , page1 used on input line 384.
+(luatex.def)             Requested size: 845.08347pt x 597.53375pt.
+ [21<./pcb.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 419.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 419.
  (./TermThreeProject.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 402.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 402.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 419.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 419.
+Package rerunfilecheck Info: File `TermThreeProject.out' has not changed.
+(rerunfilecheck)             Checksum: 78DC7EF85CF23EA7DC7E40B273312259;2384.
 
-
-Package rerunfilecheck Warning: File `TermThreeProject.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `TermThreeProject.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  78DC7EF85CF23EA7DC7E40B273312259;2384.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                TermThreeProject
-(biblatex)                and rerun LaTeX afterwards.
+LaTeX Warning: There were multiply-defined labels.
 
 Package logreq Info: Writing requests to 'TermThreeProject.run.xml'.
 
@@ -1651,19 +1622,19 @@ Package logreq Info: Writing requests to 'TermThreeProject.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 35835 strings out of 480991
- 244187,1648299 words of node,token memory allocated
- 662 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 7 attribute, 85 glue_spec, 7 attribute_list, 1 write nodes
-   avail lists: 1:8,2:5935,3:248,4:695,5:5173,6:77,7:9826,8:77,9:10400,10:38,11:511
- 51521 multiletter control sequences out of 65536+600000
- 109 fonts using 47527579 bytes
- 49i,18n,112p,1238b,1398s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/fonts/iosevka-ss15-fonts/iosevka-ss15-regular.ttf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf>
-Output written on TermThreeProject.pdf (22 pages, 804480 bytes).
+ 35944 strings out of 480991
+ 244182,1648299 words of node,token memory allocated
+ 751 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 16 attribute, 86 glue_spec, 16 attribute_list, 1 write, 8 pdf_action nodes
+   avail lists: 1:9,2:5939,3:266,4:695,5:5173,6:78,7:9828,8:170,9:10400,10:38,11:511
+ 51584 multiletter control sequences out of 65536+600000
+ 110 fonts using 47659355 bytes
+ 49i,18n,112p,1248b,1398s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/fonts/iosevka-ss15-fonts/iosevka-ss15-regular.ttf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf>
+Output written on TermThreeProject.pdf (23 pages, 819785 bytes).
 
-PDF statistics: 1066 PDF objects out of 1200 (max. 8388607)
- 915 compressed objects within 10 object streams
- 706 named destinations out of 1000 (max. 131072)
- 1 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 1212 PDF objects out of 1440 (max. 8388607)
+ 1056 compressed objects within 11 object streams
+ 717 named destinations out of 1000 (max. 131072)
+ 153 words of extra memory for PDF output out of 10000 (max. 100000000)
 
