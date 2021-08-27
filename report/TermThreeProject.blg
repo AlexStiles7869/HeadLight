@@ -1,0 +1,11 @@
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is 'TermThreeProject.blg'
+[73] biber:322> INFO - === Fri Aug 27, 2021, 15:29:48
+[87] Biber.pm:415> INFO - Reading 'TermThreeProject.bcf'
+[148] Biber.pm:940> INFO - Using all citekeys in bib section 0
+[163] Biber.pm:4256> INFO - Processing section 0
+[163] Utils.pm:75> INFO - Globbing data source 'TermThreeProject.bib'
+[163] Utils.pm:91> INFO - Globbed data source 'TermThreeProject.bib' to TermThreeProject.bib
+[174] Biber.pm:4455> INFO - Looking for bibtex format file 'TermThreeProject.bib' for section 0
+[265] Utils.pm:320> ERROR - Cannot find 'TermThreeProject.bib'!
+[265] Biber.pm:132> INFO - ERRORS: 1
