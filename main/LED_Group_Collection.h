@@ -1,6 +1,6 @@
 /**
  * @file LED_Group_Collection.h
- * @author your name (you@domain.com)
+ * @author Alex Stiles
  * @brief Provides the types and function prototypes required for the collection of LED groups.
  * @version 0.1
  * @date 2021-08-13

@@ -85,8 +85,8 @@ void set_led_group_brightnesses(LED_Group_Collection_t* led_group_collection, Lo
         group_one_brightness = (uint8_t) round((map_voltage_to_range(load_cell->voltage, load_cell->max_voltage, 1) + 0.5) * ARDUINO_PWM_WRITE_RANGE);
         group_two_brightness = (ARDUINO_PWM_WRITE_RANGE - group_one_brightness);
     } else if (led_group_collection->mode == FULL) {
-        group_one_brightness = 255;
-        group_two_brightness = 255;
+        group_one_brightness = ARDUINO_PWM_WRITE_RANGE;
+        group_two_brightness = ARDUINO_PWM_WRITE_RANGE;
     }
 
     set_group_brightness(get_led_group(led_group_collection, LEFT), group_one_brightness);

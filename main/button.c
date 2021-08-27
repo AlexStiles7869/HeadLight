@@ -8,8 +8,8 @@ Button_t init_button(uint8_t pin_number, void (*callbackFunction)()) {
         .pin_number = pin_number, 
         .debounce_delay = DEBOUNCE_DELAY, 
         .last_trigger_time = 0, 
-        .state = false, 
-        .last_state = false, 
+        .state = true, 
+        .last_state = true, 
         .callbackFunction = callbackFunction
     };
 
