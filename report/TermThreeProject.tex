@@ -197,7 +197,8 @@
 \newpage
 \begin{appendices}
     \section{Applications of the Design Toolkit}
-        \begin{longtable}{ l l p{0.5\linewidth}}
+        \centering
+        \begin{longtable}{ l p{0.2\linewidth} p{0.5\linewidth}}
             \caption{Applications of the Design Toolkit} \label{table:designtoolkit}\\
 
             % First page header
@@ -230,15 +231,17 @@
                 \item LED arrays and driver
                 \item \SI{2.5}{\volt} reference
                 \item LC filter
-            \end{itemize}  \\
+            \end{itemize} 
+            The project itself was also divided up so that one person did the software, and the other person did the hardware. \\
             Design Principle & PCB layout & The layout of the PCB was done with the aim of complying with the PCB design rules, e.g. Having components neatly lined up, minimising acute angles of tracks, increasing clearance between components and tracks, and having high current tracks where needed. \\
             Design Principle & Schematic layout & The schematic was done with the aim to follow the layout guidelines, for example, using labels, using power ports, separating major parts of the circuit, and ensuring that the labels are clear and easy to read. \\
             Design Principle / Strategy & Modularity & The code was written with the aim to be modular, e.g. multiple header files and task specific files. \\
             Design Principle & Testability & Test points were added around the circuit to aid in easy testing of the circuit's function. \\
-            Strategy & Get another perspective & Both the PCB and the schematic were checked by people other than the designer. \\
+            Strategy & Get another perspective & Both the PCB and the schematic were checked by people other than the designer, such as the other group member and people external to the group. \\
             Building Block & Amplifier & An instrumentation amplifier was constructed out of operational amplifiers to appropriately amplify the signal from the Wheatstone bridge in the load cell. \\
-            Building Block & LC Filter & An LC filter was used to filter out noise from the load cell, and to not attenuate the signal. \\
-            Building Block & Buffer & A buffer was used to create a low impedance voltage reference. \\
+            Building Block & Filter & An LC filter was used to filter out noise from the load cell, and to not attenuate the signal. \\
+            Building Block & Buffer & A buffer was used to create a low impedance voltage reference. Buffers were also used on the output of the 
+            Wheatstone bridge to provide a high impedance for the Wheatstone bridge so that the signal was not excessively attenuated. \\
             Building Block & Current Limiting Resistor & Current limiting resistors were usd to limit the gate current for the MOSFETs and the current through the LEDs. \\
             Building Block & Arduino microcontroller & The Arduino is the main controller for the circuit, it controls the brightness and reads the load cell. \\
             Building Block & Pull up resistor & An internal pull up resistor is used for the button. A pull up was chosen so that the internal pull up resistor could be utilised, keeping the parts count down.\\
