@@ -5,7 +5,7 @@
 \usepackage[a4paper, margin=20mm, headheight=12.0pt]{geometry}
 \usepackage{fancyhdr, multicol, graphicx, caption, tabu, longtable, float, booktabs, tabularx, listings, xcolor, pdfpages, subcaption, titling, titlesec, enumitem, url, currency, pdflscape, relsize}
 \usepackage[toc,page]{appendix}
-\usepackage[style=ieee, backend=biber]{biblatex}
+\usepackage[style=ieee, backend=biber, urldate=long]{biblatex}
 \usepackage[thinc]{esdiff}
 \usepackage[colorlinks=true, linkcolor=blue, citecolor=red]{hyperref}
 
@@ -172,7 +172,7 @@
         \subsubsection{Amplifier}
         An instrumentation amplifier was chosen to amplify the signal from the load cell. The instrumentation amplifier consists of two non-inverting amplifiers, of which the outputs go into a differential amplifier. As the Arduino cannot read negative voltages, nor is there a negative supply, the differential amplifier was biased with \SI{2.5}{\volt}. This results in the positive difference being between \SI{2.5}{\volt} and \SI{5}{\volt}, and the negative difference is between \SI{0}{\volt} and \SI{2.5}{\volt}. A one op-amp differential amplifier has an extremely low input impedance; thus the Wheatstone bridge must have a matched impedance. A two op-amp instrumentation amplifier would require one less package but would be less stable than the three op-amp instrumentation amplifier. The three op-amp instrumentation amplifier also has a spare op-amp which is then utilised for the voltage reference.
 
-        An initial gain of \SI{24}{\ohm} was calculated (as shown in equation \eqref{eq:g4}) \cite{ti:sloa034}, but after some test on a breadboard, the gain was changed \SI{33}{\ohm}. This was partly due to the load cell to measure \SI{\sim 50}{\percent} more than rated \cite{htc:tal221}.
+        An initial gain of \SI{24}{\ohm} was calculated (as shown in equation \eqref{eq:g4}) \cite{ti:sloa034}, but after some test on a breadboard, the gain was changed \SI{33}{\ohm}. This was partly due to the load cell's ability to measure \SI{\sim 50}{\percent} more than rated \cite{htc:tal221}.
         \begin{align}
             V_{O} &= \left[ \left(\text{Sig}^{+}\right) - \left(\text{Sig}^{-}\right)\right]\left[\frac{R_{4}}{R_{2}} \left[\frac{2R_{f}}{R_{g}} + 1\right] \right] \label{eq:g1}\\
             R_{g} &= \ddfrac{2R_{f}}{\left[\frac{V_{O}}{\left(\text{Sig}^{+}\right) - \left(\text{Sig}^{-}\right)} \frac{R_{2}}{R_{4}} \right]-1} \label{eq:g2}\\
