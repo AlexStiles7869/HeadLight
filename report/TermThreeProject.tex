@@ -16,6 +16,17 @@
 % \setmonofont{Cascadia Code}
 \setmathfont{Latin Modern Math}
 
+% Listing Format
+\lstset{language=C++,
+        basicstyle=\small\ttfamily,
+        numberstyle=\ttfamily,
+        numbers=left,
+        breaklines=true,
+        tabsize=4,
+        keywordstyle=\color{listingblue},
+        commentstyle=\color{grey},
+        captionpos=b}
+
 % Maths formatting
 \newcommand\ddfrac[2]{\frac{\displaystyle #1}{\displaystyle #2}}
 
@@ -124,6 +135,7 @@
         \caption{A block diagram of the function of the HeadLight}
         \label{fig:block}
     \end{figure}
+
     \subsection{Arduino Shield}
         \paragraph{}
         A load cell is used to measure the force of the head rotation, which has an internal Wheatstone bridge. The output from the Wheatstone bridge goes into an instrumentation amplifier. The instrumentation amplifier consists of non-inverting amplifiers on the output of the Wheatstone bridge, which then goes into a differential amplifier, as shown in figure \ref{fig:inamp}. The output of the differential amplifier goes into an LC low pass filter to remove high-frequency noise.
@@ -184,12 +196,101 @@
         \paragraph{}
         Each LED array has a MOSFET; this was done to have enough current supplied to the LEDs. The pins that can output PWM are only able to supply \SI{40}{\milli\amp}, so the outputs from these pins were connected to the gates of the MOSFETs. This allows the LEDs to take full current and are thus brighter. IRF740 MOSFETs were chosen due to their availability in the store and their low resistance. They have a max current of 10 A, so more LEDs can be added if required. The low resistance of the IRF740 (\SI{0.55}{\ohm}), reduces the power losses when the MOSFET is on. Individual resistors could have been matched to each LED; however, this would increase the number of components and take up extra space on the PCB. \SI{100}{\ohm} resistors were placed between the PWM output from the Arduino and the gate of the MOSFETs, this was done to minimise ringing and to limit current.
 
+    \subsection{Microcontroller Overview}
+        \paragraph{}
+        The microcontroller selected for the HeadLight prototype was the Arduino Uno Rev 3. The Arduino Uno provides many advantages over other options. Mainly, it provides a simple interface, through C++ libraries, for accessing core hardware facilities and corresponding functionality, such as GPIO and PWM manipulation. The HeadLight design makes extensive use of both GPIO pins and PWM output, therefore having the ability to access and manipulate these rapidly is important to expedite the early prototyping stages. 
+
+        We wrote the software for the Arduino in C as opposed to C++. C++ is the natural choice as the Arduino libraries are written in C++, and the source code is compiled as C++. Still, after analysing the advantages and disadvantages of each option, we decided that C was the better choice. The benefits of using C over C++ are as follows:
+        \begin{itemize}
+            \item We collectively have more experience with C than C++, making collaboration easier and coding quicker.
+            \item The Arduino doesn't provide the C++ standard library (ref), as it uses too much dynamic memory.
+            \item Software written in C is likely to be easier to port to another, more appropriate microcontroller if the product matures past the prototyping stage. 
+        \end{itemize}
+        There are disadvantages to this decision, which we took into due consideration:
+        \begin{itemize}
+            \item In the way we would've written the code, C++ is easier to read to those without C/C++ experience. The primary advantage of C++ in this context is the use of the OOP paradigm through classes, encapsulation, and polymorphism. This programming style would be more similar to those with Python experience than the procedural style of C. 
+            \item There is some essential boilerplate required in the header files containing function prototypes. This boilerplate is a set of preprocessor directives that ensure the C++ linker doesn't mangle the function names. 
+            \item Following the previous point, C++ is a superset of C, meaning all C code is valid (if not best practice) C++ code. Unfortunately, this is not true in the other way. Therefore, to use C++ code in C, a linker library must be written, which requires significant work. Thus, the Arduino libraries that provide access to the GPIO pins and PWM functionality cannot be accessed in functions linked as C code. Consequently, we can only use the Arduino library functions within the \texttt{main.ino} file. 
+        \end{itemize}
+
+        \subsubsection{Software Functionality}
+            In the whole system seen figure \ref{fig:block}, the Arduino's job is to calculate and process the signal from the load cell after it has been amplified and filtered and utilise that information to determine the required PWM outputs of the two LED arrays.  
+            The software has two modes programmed:
+            \begin{itemize}
+                \item The first is the `follow' mode, which changes the intensity of the LED array associated with the direction of head rotation, as seen in Figure \ref{fig:sketch}. For example, if someone was looking \SI{90}{\degree} left, the left LED array would be full intensity while the right LED array would be off. This is the mode the headlight is in when turned on.
+                \item The second is `full' mode, in which both of the LED groups are at full brightness regardless of the load cell state. 
+            \end{itemize}
+            \paragraph{Overview}
+            When someone turns on the Arduino, it goes through an initial setup process. Once the Arduino has completed this, it enters a loop that handles all the sensor polling, calculations, and PWM output manipulation.
+            A high-level overview of the loop that the Arduino runs through is as follows:
+            \begin{itemize}
+                \item Get the current button reading and debounce it: 
+                \item \begin{itemize}
+                        \item Update the mode if it is determined the user pressed the button
+                    \end{itemize}
+                \item Check if that either are true:
+                \item \begin{itemize}
+                        \item Poll the load cell and check if it has detected a deviation of at least \SI{0.1}{\volt}. 
+                        \item Check if the mode has changed this loop. 
+                        \item If either of these is true:
+                        \item \begin{itemize}
+                            \item Calculate and update the PWM outputs of the two LED arrays.
+                        \end{itemize}
+                    \end{itemize}
+                \item Stop execution for \SI{20}{\milli\second} to reduce power usage while maintaining a high polling rate to detect button presses and rapid head movements.
+            \end{itemize}
+            A complete code listing can be found in Appendix \ref{appendix:listing}.
+            \paragraph{Reading Load Cell Signal}
+            Every time the Arduino loops, it polls the load cell to check if the currently read voltage differs from the previously read voltage reading by a defined constant, \texttt{DEVIATION\_VOLTAGE}, set to 0.1. The deviation check code snippet is shown below:
+            \begin{lstlisting}
+Deviation = (load_cell->voltage - read_voltage) > load_cell->deviation_voltage_breakpoint 
+            \end{lstlisting}
+            If this is true, the Arduino updates the load cell reading and other associated values, specifically strain and angle. The deviation flag is also set to true, which indicates that the PWM outputs of the LED arrays need to be updated.
+            \paragraph{Calculating PWM Output}
+            Once the Arduino has detected a sufficient deviation in load cell voltage, it can calculate the new PWM outputs. Assuming the mode is `follow', the amplified load cell voltage is mapped to the range of PWM output values \(\left[0, 255\right]\). The paraphrased code snippet used to get the left LED array PWM output is shown below. Constants have been substituted with their values for convenience. 
+            \begin{lstlisting}
+left_group_brightness = (uint8_t) round(((load_cell->voltage - COMMON_MODE_VOLTAGE) / load_cell->max_voltage) + 0.5) * 255);
+            \end{lstlisting}
+            This value is then rounded to the closest integer and cast to a \texttt{uint8\_t}, an unsigned 8-byte integer that can hold values \(\left[0, 255\right]\). The value for the right LED array is the max PWM write value minus the calculated value for the left LED array shown below:
+            \begin{lstlisting}
+right_group_brightness = (255 - group_one_brightness); 
+            \end{lstlisting}
+            \paragraph{Button}
+            The Arduino switches between the modes by using a user interaction through a button. To ensure the button isn't triggered arbitrarily, we utilised two methods to reduce noise triggering. 
+
+            Firstly, we used the Arduino's internal pullup resistor on the button, ensuring a logical high when the button is not pressed instead of a floating voltage. Unfortunately, this doesn't solve the problem of the button rapidly changing state when pressed and released. Therefore, secondly, the Arduino, through software, also debounces the button before its state is confirmed. The button must hold a different state (released after being pressed, for example) for \SI{20}{\milli\second} before being registered. \SI{20}{\milli\second} was determined to be a good intermediary between not interfering with user interaction and removing the rapid switching through testing. The function used to debounce the button state is shown below:
+            \begin{lstlisting}
+void debounce_state(Button_t* button, bool read_button_state, long unsigned current_time) {     
+
+if (read_button_state != button->last_state) { 
+    button->last_trigger_time = current_time; 
+} 
+
+if ((current_time - button->last_trigger_time) > button->debounce_delay) { 
+    if (read_button_state != button->state) { 
+        button->state = read_button_state; 
+        if (button->state) { 
+            button_clicked(button); 
+        } 
+    }
+} 
+
+button->last_state = read_button_state; 
+            \end{lstlisting}
+
 \section{Testing}
     The PCB will be assembled and attached to an Arduino. The code will be uploaded to the Arduino. The load cell will be manipulated, and the PWM signal will be probed using an oscilloscope. The duty cycle of the PWM signal will be compared to the expected duty cycle.
     The LEDs will then be connected, and the load cell manipulated to check that the LEDs behave as expected in terms of brightness and direction changes. 
     The load cell signal will be probed to ensure that the gain resistor is the correct value. This will be done by placing an appropriately \SI{100}{\gram} mass on the load cell and measuring the voltage that is output by the instrumentation amplifier.
 
-\section{Conclusions}
+\section{Conclusion}
+    \paragraph{}
+    This report detailed the prototyping process undertaken to test the feasibility of the HeadLight concept. We achieved our goal of developing a medium-fidelity prototype which allowed us to demonstrate the functionality of HeadLight. The prototype developed contained six distinct parts, as shown in the block diagram \ref{fig:block}. All the parts work together to implement the required functionality as well as the additional mode functionality. The load cell output first goes through an amplification and conditioning stage, which involves an instrumental amplifier and filtering section and takes place on the shield. The modified signal then enters the Arduino through a GPIO pin. The Arduino then determines if sufficient deviation has been detected to alter the PWM outputs. These outputs enter the gates of MOSFETs, which 'amplifies' the current received by the LED arrays. This general loop is what could be expected from a final product. The startup's design team has indicated that they know that the Arduino Microcontroller is not suitable long term for this project but is very applicable during the prototyping process. 
+
+    Developing this prototype provided many insights into the advantages and disadvantages of design decisions set by the specifications, specifically related to the load cell. Although we didn't house the prototype in a helmet enclosure, we have concerns about using a load cell to detect head movement. Although the load cell could be attached to the helmet in such a way as to produce a reliable reading for purely horizontal deviation, we are worried that vertical head deviation could have unintended consequences. Therefore, if we undertook future prototyping, we would recommend switching to a gyroscope and accelerometers to attain head movement. This would provide more accurate, precise readings and more relevantly isolate movement on a specific axis. 
+
+    Overall, we also have concerns about the ability of HeadLight to offer any appealing additional functionality. Further testing within context would have to be undertaken by stakeholders to establish if the HeadLight in its current form provides any significant advantage over a standard headlight.
+    
 \newpage
 % Bibliography
 \printbibliography
@@ -253,162 +354,18 @@
 
     \section{Code}
         \label{appendix:listing}
-        \lstset{language=C++,
-                basicstyle=\small\ttfamily,
-                numberstyle=\ttfamily,
-                numbers=left,
-                breaklines=true,
-                tabsize=4,
-                keywordstyle=\color{listingblue},
-                commentstyle=\color{grey},
-                caption=Button code.,
-                label=Listing:1,
-                captionpos=b
-        }
-        \lstinputlisting{../main/button.c}
-        \lstset{language=C++,
-                basicstyle=\small\ttfamily,
-                numberstyle=\ttfamily,
-                numbers=left,
-                breaklines=true,
-                tabsize=4,
-                keywordstyle=\color{listingblue},
-                commentstyle=\color{grey},
-                caption=Button header code.,
-                label=Listing:1,
-                captionpos=b
-        }
-        \lstinputlisting{../main/button.h}
-        \lstset{language=C++,
-                basicstyle=\small\ttfamily,
-                numberstyle=\ttfamily,
-                numbers=left,
-                breaklines=true,
-                tabsize=4,
-                keywordstyle=\color{listingblue},
-                commentstyle=\color{grey},
-                caption=LED group code.,
-                label=Listing:1,
-                captionpos=b
-        }
-        \lstinputlisting{../main/LED_Group.c}
-        \lstset{language=C++,
-                basicstyle=\small\ttfamily,
-                numberstyle=\ttfamily,
-                numbers=left,
-                breaklines=true,
-                tabsize=4,
-                keywordstyle=\color{listingblue},
-                commentstyle=\color{grey},
-                caption=LED group header code.,
-                label=Listing:1,
-                captionpos=b
-        }
-        \lstinputlisting{../main/LED_Group.h}
-        \lstset{language=C++,
-                basicstyle=\small\ttfamily,
-                numberstyle=\ttfamily,
-                numbers=left,
-                breaklines=true,
-                tabsize=4,
-                keywordstyle=\color{listingblue},
-                commentstyle=\color{grey},
-                caption=LED group collection code.,
-                label=Listing:1,
-                captionpos=b
-        }
-        \lstinputlisting{../main/LED_Group_Collection.c}
-        \lstset{language=C++,
-                basicstyle=\small\ttfamily,
-                numberstyle=\ttfamily,
-                numbers=left,
-                breaklines=true,
-                tabsize=4,
-                keywordstyle=\color{listingblue},
-                commentstyle=\color{grey},
-                caption=LED group collection header code.,
-                label=Listing:1,
-                captionpos=b
-        }
-        \lstinputlisting{../main/LED_Group_Collection.h}
-        \lstset{language=C++,
-                basicstyle=\small\ttfamily,
-                numberstyle=\ttfamily,
-                numbers=left,
-                breaklines=true,
-                tabsize=4,
-                keywordstyle=\color{listingblue},
-                commentstyle=\color{grey},
-                caption=Load cell code.,
-                label=Listing:1,
-                captionpos=b
-        }
-        \lstinputlisting{../main/Load_Cell.c}
-        \lstset{language=C++,
-                basicstyle=\small\ttfamily,
-                numberstyle=\ttfamily,
-                numbers=left,
-                breaklines=true,
-                tabsize=4,
-                keywordstyle=\color{listingblue},
-                commentstyle=\color{grey},
-                caption=Load cell header code.,
-                label=Listing:1,
-                captionpos=b
-        }
-        \lstinputlisting{../main/Load_Cell.h}
-        \lstset{language=C++,
-                basicstyle=\small\ttfamily,
-                numberstyle=\ttfamily,
-                numbers=left,
-                breaklines=true,
-                tabsize=4,
-                keywordstyle=\color{listingblue},
-                commentstyle=\color{grey},
-                caption=Main code.,
-                label=Listing:1,
-                captionpos=b
-        }
-        \lstinputlisting{../main/main.c}
-        \lstset{language=C++,
-                basicstyle=\small\ttfamily,
-                numberstyle=\ttfamily,
-                numbers=left,
-                breaklines=true,
-                tabsize=4,
-                keywordstyle=\color{listingblue},
-                commentstyle=\color{grey},
-                caption=Voltage ADC code.,
-                label=Listing:1,
-                captionpos=b
-        }
-        \lstinputlisting{../main/voltage.c}
-        \lstset{language=C++,
-                basicstyle=\small\ttfamily,
-                numberstyle=\ttfamily,
-                numbers=left,
-                breaklines=true,
-                tabsize=4,
-                keywordstyle=\color{listingblue},
-                commentstyle=\color{grey},
-                caption=Voltage ADC header code.,
-                label=Listing:1,
-                captionpos=b
-        }
-        \lstinputlisting{../main/voltage.h}
-        \lstset{language=C++,
-                basicstyle=\small\ttfamily,
-                numberstyle=\ttfamily,
-                numbers=left,
-                breaklines=true,
-                tabsize=4,
-                keywordstyle=\color{listingblue},
-                commentstyle=\color{grey},
-                caption=Main code.,
-                label=Listing:1,
-                captionpos=b
-        }
-        \lstinputlisting{../main/main.ino}
+        \lstinputlisting[caption=Button code., label=Listing:1]{../main/button.c}
+        \lstinputlisting[caption=Button header code., label=Listing:2]{../main/button.h}
+        \lstinputlisting[caption=LED group code., label=Listing:3]{../main/LED_Group.c}
+        \lstinputlisting[caption=LED group header code., label=Listing:4]{../main/LED_Group.h}
+        \lstinputlisting[caption=.LED group collection code, label=Listing:5]{../main/LED_Group_Collection.c}
+        \lstinputlisting[caption=LED group collection header code., label=Listing:6]{../main/LED_Group_Collection.h}
+        \lstinputlisting[caption=Load cell code., label=Listing:7]{../main/Load_Cell.c}
+        \lstinputlisting[caption=Load cell code., label=Listing:8]{../main/Load_Cell.h}
+        \lstinputlisting[caption=Main code., label=Listing:9]{../main/main.c}
+        \lstinputlisting[caption=Voltage ADC code., label=Listing:10]{../main/voltage.c}
+        \lstinputlisting[caption=Voltage ADC header code., label=Listing:11, captionpos=b]{../main/voltage.h}
+        \lstinputlisting[caption=Main Arduino code., label=Listing:main, captionpos=b]{../main/main.ino}
     \newpage
     \section{Schematic}
         \label{appendix:schematic}
