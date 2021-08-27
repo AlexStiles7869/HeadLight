@@ -118,7 +118,7 @@
 \section{Introduction}
     Cyclists often use lights for nighttime bicycle rides. These lights may be fixed to the bicycle or may not illuminate where the rider wishes. A light that illuminates in a direction based on the force applied to a load cell was designed using a microcontroller. When the rider turns their head, the brightness of one LED array increases and the brightness of the other decreases. An Arduino shield printed circuit board (PCB) was designed, and software for the Arduino was written.
 
-\section{Background}
+\section{Design Context}
     \noindent
     \begin{figure}[H]
         \centering
@@ -255,25 +255,25 @@ right_group_brightness = (255 - group_one_brightness);
             \paragraph{Button}
             The Arduino switches between the modes by using a user interaction through a button. To ensure the button isn't triggered arbitrarily, we utilised two methods to reduce noise triggering. 
 
-            Firstly, we used the Arduino's internal pullup resistor on the button, ensuring a logical high when the button is not pressed instead of a floating voltage. Unfortunately, this doesn't solve the problem of the button rapidly changing state when pressed and released. Therefore, secondly, the Arduino, through software, also debounces the button before its state is confirmed. The button must hold a different state (released after being pressed, for example) for \SI{20}{\milli\second} before being registered. \SI{20}{\milli\second} was determined to be a good intermediary between not interfering with user interaction and removing the rapid switching through testing. The function used to debounce the button state is shown below:
-            \begin{lstlisting}
-void debounce_state(Button_t* button, bool read_button_state, long unsigned current_time) {     
+            Firstly, we used the Arduino's internal pullup resistor on the button, ensuring a logical high when the button is not pressed instead of a floating voltage. Unfortunately, this doesn't solve the problem of the button rapidly changing state when pressed and released. Therefore, secondly, the Arduino, through software, also debounces the button before its state is confirmed. The button must hold a different state (released after being pressed, for example) for \SI{20}{\milli\second} before being registered. \SI{20}{\milli\second} was determined to be a good intermediary between not interfering with user interaction and removing the rapid switching through testing. The function used to debounce the button state is shown in listing \ref{Listing:1}, lines \ref{line:button_start} through to \ref{line:button_end}.
+%             \begin{lstlisting}
+% void debounce_state(Button_t* button, bool read_button_state, long unsigned current_time) {     
 
-if (read_button_state != button->last_state) { 
-    button->last_trigger_time = current_time; 
-} 
+% if (read_button_state != button->last_state) { 
+%     button->last_trigger_time = current_time; 
+% } 
 
-if ((current_time - button->last_trigger_time) > button->debounce_delay) { 
-    if (read_button_state != button->state) { 
-        button->state = read_button_state; 
-        if (button->state) { 
-            button_clicked(button); 
-        } 
-    }
-} 
+% if ((current_time - button->last_trigger_time) > button->debounce_delay) { 
+%     if (read_button_state != button->state) { 
+%         button->state = read_button_state; 
+%         if (button->state) { 
+%             button_clicked(button); 
+%         } 
+%     }
+% } 
 
-button->last_state = read_button_state; 
-            \end{lstlisting}
+% button->last_state = read_button_state; 
+%             \end{lstlisting}
 
 \section{Testing}
     The PCB will be assembled and attached to an Arduino. The code will be uploaded to the Arduino. The load cell will be manipulated, and the PWM signal will be probed using an oscilloscope. The duty cycle of the PWM signal will be compared to the expected duty cycle.
@@ -351,7 +351,7 @@ button->last_state = read_button_state;
 
     \section{Code}
         \label{appendix:listing}
-        \lstinputlisting[caption=Button code., label=Listing:1]{../main/button.c}
+        \lstinputlisting[caption=Button code., label=Listing:1, escapechar=|]{../main/button_COMMENT.c}
         \lstinputlisting[caption=Button header code., label=Listing:2]{../main/button.h}
         \lstinputlisting[caption=LED group code., label=Listing:3]{../main/LED_Group.c}
         \lstinputlisting[caption=LED group header code., label=Listing:4]{../main/LED_Group.h}
