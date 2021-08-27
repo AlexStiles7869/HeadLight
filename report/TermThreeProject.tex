@@ -122,7 +122,7 @@
         \centering
         \includegraphics[width=0.75\textwidth]{block_diagram.png}
         \caption{A block diagram of the function of the HeadLight}
-        \label{fig:sketch}
+        \label{fig:block}
     \end{figure}
     \subsection{Arduino Shield}
         \paragraph{}
@@ -196,13 +196,14 @@
 \newpage
 \begin{appendices}
     \section{Applications of the Design Toolkit}
-        \begin{table}[H]
+        % \begin{table}[H]
             \centering
-            \caption{Applications of the Design Toolkit.} \label{table:designtoolkit}
-            \begin{tabularx}{\linewidth}{l l X}
-                \toprule\endhead
-                \midrule\multicolumn{2}{r}{\itshape continues on next page}\\\midrule\endfoot
-                \bottomrule\endlastfoot
+            \begin{longtable}{ l l l }
+            \caption{Applications of the Design Toolkit.}\\
+            \label{table:designtoolkit}\\
+                % \toprule\endhead
+                % \midrule\multicolumn{2}{r}{\itshape continues on next page}\\\midrule\endfoot
+                % \bottomrule\endlastfoot
                 \toprule
                 Tool Type & Tool Name & Where/How Used \\
                 \midrule
@@ -214,9 +215,6 @@
                 %     \item LC filter
                 % \end{itemize}  \\
                 \\
-                Design Principle & PCB layout & The layout of the PCB was done with the aim of complying with the PCB design rules, e.g. Having components neatly lined up, minimising acute angles of tracks, increasing clearance between components and tracks, and having high current tracks where needed. \\
-                Design Principle & PCB layout & The layout of the PCB was done with the aim of complying with the PCB design rules, e.g. Having components neatly lined up, minimising acute angles of tracks, increasing clearance between components and tracks, and having high current tracks where needed. \\
-                Design Principle & PCB layout & The layout of the PCB was done with the aim of complying with the PCB design rules, e.g. Having components neatly lined up, minimising acute angles of tracks, increasing clearance between components and tracks, and having high current tracks where needed. \\
                 Design Principle & PCB layout & The layout of the PCB was done with the aim of complying with the PCB design rules, e.g. Having components neatly lined up, minimising acute angles of tracks, increasing clearance between components and tracks, and having high current tracks where needed. \\
                 Design Principle & Schematic layout & The schematic was done with the aim to follow the layout guidelines, for example, using labels, using power ports, separating major parts of the circuit, and ensuring that the labels are clear and easy to read. \\
                 Design Principle / Strategy & Modularity & The code was written with the aim to be modular, e.g. multiple header files and task specific files. \\
@@ -234,8 +232,8 @@
                 Building Block & Digital output & Digital outputs were used for the MOSFETs that control the LEDs, amd for the auxillary output. Digital outputs are capable of outputting PWM. \\
                 % Building Block & 
                 \bottomrule
-            \end{tabularx}
-        \end{table}
+            \end{longtable}
+        % \end{table}
     \newpage
     \section{Code}
         \label{appendix:listing}

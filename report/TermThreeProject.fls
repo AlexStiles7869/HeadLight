@@ -348,11 +348,6 @@ INPUT ./vref.png
 INPUT ./ledarray.png
 INPUT ./ledarray.png
 INPUT ./ledarray.png
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr7.tfm
-INPUT /usr/share/texlive/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
-INPUT /usr/share/texlive/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
-INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr5.tfm
 INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT /usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty

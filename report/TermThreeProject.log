@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2021.1.13)  27 AUG 2021 14:53
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2021.1.13)  27 AUG 2021 15:07
  restricted system commands enabled.
  file:line:error style messages enabled.
 **"/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex"
@@ -1543,1027 +1543,100 @@ LaTeX Warning: Citation 'htc:tal221' on page 4 undefined on input line 162.
 
 LaTeX Warning: Empty bibliography on input line 194.
 
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Undefined control sequence.
-\LT@echunk ->\crcr \LT@save@row 
-                                \cr \egroup \global \setbox \@ne \lastbox \u...
-l.237             \end{tabularx}
-                              
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Undefined control sequence.
-\LT@def@row ...e \expandafter \count@ \LT@old@row 
-                                                  \else {1}{0pt}\fi }\let \L...
-l.237             \end{tabularx}
-                              
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Argument of \LT@max@sel has an extra }.
-<inserted text> 
-\par 
-l.237             \end{tabularx}
-                              
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Paragraph ended before \LT@max@sel was complete.
-<to be read again> 
-\par 
-l.237             \end{tabularx}
-                              
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Undefined control sequence.
-\LT@end@hd@ft ...ox \z@ \LT@get@widths \LT@bchunk 
-                                                  
-l.237             \end{tabularx}
-                              
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced \noalign.
-\midrule ->\noalign 
-                    {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global \@...
-l.237             \end{tabularx}
-                              
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Missing $ inserted.
-<inserted text> 
-$
-l.237             \end{tabularx}
-                              
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Missing } inserted.
-<inserted text> 
-}
-l.237             \end{tabularx}
-                              
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Missing } inserted.
-<inserted text> 
-}
-l.237             \end{tabularx}
-                              
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Missing } inserted.
-<inserted text> 
-}
-l.237             \end{tabularx}
-                              
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Undefined control sequence.
-\@BTrule ...\doublerulesep \fi \fi \fi \@BTswitch 
-                                                  
-l.237             \end{tabularx}
-                              
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced \omit.
-<recently read> \omit 
-      
-l.237             \end{tabularx}
-                              
-I expect to see \omit only after tab marks or the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced \span.
-\sp@n ->\span 
-              \omit \advance \@multicnt \m@ne 
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced \omit.
-\sp@n ->\span \omit 
-                    \advance \@multicnt \m@ne 
-l.237             \end{tabularx}
-                              
-I expect to see \omit only after tab marks or the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced \noalign.
-\midrule ->\noalign 
-                    {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global \@...
-l.237             \end{tabularx}
-                              
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced \crcr.
-\LT@echunk ->\crcr 
-                   \LT@save@row \cr \egroup \global \setbox \@ne \lastbox \u...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-Runaway argument?
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Paragraph ended before \LT@entry was complete.
-<to be read again> 
-\par 
-l.237             \end{tabularx}
-                              
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced \cr.
-\LT@echunk ->\crcr \LT@save@row \cr 
-                                    \egroup \global \setbox \@ne \lastbox \u...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Extra }, or forgotten \endgroup.
-\LT@echunk ...etbox \@ne \lastbox \unskip \egroup 
-                                                  
-l.237             \end{tabularx}
-                              
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Undefined control sequence.
-\LT@end@hd@ft ...ox \z@ \LT@get@widths \LT@bchunk 
-                                                  
-l.237             \end{tabularx}
-                              
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced \noalign.
-\bottomrule ->\noalign 
-                       {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global...
-l.237             \end{tabularx}
-                              
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced \crcr.
-\LT@echunk ->\crcr 
-                   \LT@save@row \cr \egroup \global \setbox \@ne \lastbox \u...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced \cr.
-\LT@echunk ->\crcr \LT@save@row \cr 
-                                    \egroup \global \setbox \@ne \lastbox \u...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Extra }, or forgotten \endgroup.
-\LT@echunk ->\crcr \LT@save@row \cr \egroup 
-                                            \global \setbox \@ne \lastbox \u...
-l.237             \end{tabularx}
-                              
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Extra }, or forgotten \endgroup.
-\LT@echunk ...etbox \@ne \lastbox \unskip \egroup 
-                                                  
-l.237             \end{tabularx}
-                              
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Undefined control sequence.
-\LT@end@hd@ft ...ox \z@ \LT@get@widths \LT@bchunk 
-                                                  
-l.237             \end{tabularx}
-                              
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced \noalign.
-\toprule ->\noalign 
-                    {\ifnum 0=`}\fi \@aboverulesep =\abovetopsep \global \@b...
-l.237             \end{tabularx}
-                              
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ...t \bottomrule \endlastfoot \toprule Tool Type &
-                                                   Tool Name & Where/How Use...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ...e \endlastfoot \toprule Tool Type & Tool Name &
-                                                   Where/How Used \\ \midrul...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced \noalign.
-\midrule ->\noalign 
-                    {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global \@...
-l.237             \end{tabularx}
-                              
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ...ol Name & Where/How Used \\ \midrule Strategy &
-                                                   Divide \& Conquer & Divid...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ...Used \\ \midrule Strategy & Divide \& Conquer &
-                                                   Divide and conquer was us...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ...the hardware design into: \\ Design Principle &
-                                                   PCB layout & The layout o...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ...design into: \\ Design Principle & PCB layout &
-                                                   The layout of the PCB was...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ...rent tracks where needed. \\ Design Principle &
-                                                   PCB layout & The layout o...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ...here needed. \\ Design Principle & PCB layout &
-                                                   The layout of the PCB was...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ...rent tracks where needed. \\ Design Principle &
-                                                   PCB layout & The layout o...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ...here needed. \\ Design Principle & PCB layout &
-                                                   The layout of the PCB was...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ...rent tracks where needed. \\ Design Principle &
-                                                   PCB layout & The layout o...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ...here needed. \\ Design Principle & PCB layout &
-                                                   The layout of the PCB was...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ...rent tracks where needed. \\ Design Principle &
-                                                   Schematic layout & The sc...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ...eeded. \\ Design Principle & Schematic layout &
-                                                   The schematic was done wi...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ... easy to read. \\ Design Principle / Strategy &
-                                                   Modularity & The code was...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> .... \\ Design Principle / Strategy & Modularity &
-                                                   The code was written with...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ... and task specific files. \\ Design Principle &
-                                                   Testability & Test points...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ...ific files. \\ Design Principle & Testability &
-                                                   Test points were added ar...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ...esting of the circuit's function. \\ Strategy &
-                                                   Get another perspective &...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ...nction. \\ Strategy & Get another perspective &
-                                                   Both the PCB and the sche...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ... other than the designer. \\ Design Principle &
-                                                   & \\ Design Principle & &...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ...ther than the designer. \\ Design Principle & &
-                                                   \\ Design Principle & & \...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> .... \\ Design Principle & & \\ Design Principle &
-                                                   & \\ Building Block & Amp...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ...\\ Design Principle & & \\ Design Principle & &
-                                                   \\ Building Block & Ampli...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ...& & \\ Design Principle & & \\ Building Block &
-                                                   Amplifier & An instrument...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ...n Principle & & \\ Building Block & Amplifier &
-                                                   An instrumentation amplif...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ...ne bridge in the load cell. \\ Building Block &
-                                                   LC Filter & An LC filter ...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ... the load cell. \\ Building Block & LC Filter &
-                                                   An LC filter was used to ...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ...o not attenuate the signal. \\ Building Block &
-                                                   Buffer & A buffer was use...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ...enuate the signal. \\ Building Block & Buffer &
-                                                   A buffer was used to crea...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ...mpedance voltage reference. \\ Building Block &
-                                                   Current Limiting Resistor...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ...\\ Building Block & Current Limiting Resistor &
-                                                   Current limiting resistor...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ...e current through the LEDs. \\ Building Block &
-                                                   Arduino microcontroller &...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> .... \\ Building Block & Arduino microcontroller &
-                                                   The Arduino is the main c...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ...ss and reads the load cell. \\ Building Block &
-                                                   Pull up resistor & An int...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ...ad cell. \\ Building Block & Pull up resistor &
-                                                   An internal pull up resis...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ...eeping the parts count down.\\ Building Block &
-                                                   Analog input & An analog ...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ...s count down.\\ Building Block & Analog input &
-                                                   An analog input was used ...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ...ne bridge of the load cell. \\ Building Block &
-                                                   Digital output & Digital ...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced alignment tab character &.
-<inserted text> ...load cell. \\ Building Block & Digital output &
-                                                   Digital outputs were used...
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced \noalign.
-\bottomrule ->\noalign 
-                       {\ifnum 0=`}\fi \@aboverulesep =\aboverulesep \global...
-l.237             \end{tabularx}
-                              
-I expect to see \noalign only after the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Misplaced \crcr.
-\endarray ->\crcr 
-                  \egroup \egroup \@arrayright \gdef \@preamble {}
-l.237             \end{tabularx}
-                              
-I can't figure out why you would want to use a tab mark
-or \cr or \span just now. If something like a right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Extra }, or forgotten \endgroup.
-\endarray ->\crcr \egroup 
-                          \egroup \@arrayright \gdef \@preamble {}
-l.237             \end{tabularx}
-                              
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Extra }, or forgotten \endgroup.
-\endarray ->\crcr \egroup \egroup 
-                                  \@arrayright \gdef \@preamble {}
-l.237             \end{tabularx}
-                              
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Extra }, or forgotten $.
-<recently read> \egroup 
-        
-l.237             \end{tabularx}
-                              
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Extra }, or forgotten $.
-\TX@trial ...er \tabular \the \toks@ \endtabular }
-                                                  \TX@ckpt \TX@typeout@ {\@s...
-l.237             \end{tabularx}
-                              
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Undefined control sequence.
-\TX@trial ...ar \the \toks@ \endtabular }\TX@ckpt 
-                                                  \TX@typeout@ {\@spaces \ex...
-l.237             \end{tabularx}
-                              
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Package array Error:  Illegal pream-token (\getanddefine@fonts): `c' used.
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.237             \end{tabularx}
-                              
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Trying to load font information for \OML+cmm on input line 237.
-LaTeX Font Info:    No file \OMLcmm.fd. on input line 237.
-LaTeX Font Info:    Trying to load font information for \OML+lmr on input line 237.
-LaTeX Font Info:    No file \OMLlmr.fd. on input line 237.
-
-LaTeX Font Warning: Font shape `\OML/cmm/b/it' undefined
-(Font)              using `\OML/lmr/m/n' instead on input line 237.
-
-
-LaTeX Font Warning: Font shape `\OML/lmr/m/n' undefined
-(Font)              using `\OML/lmr/m/n' instead on input line 237.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Corrupted NFSS tables.
-wrong@fontshape ...message {Corrupted NFSS tables}
-                                                  error@fontshape else let f...
-l.237             \end{tabularx}
-                              
-This error message was generated by an \errmessage
-command, so I can't give any explicit help.
-Pretend that you're Hercule Poirot: Examine all clues,
-and deduce the truth by order and method.
-
-
-LaTeX Font Warning: Font shape `\OML/lmr/m/n' undefined
-(Font)              using `OT1/cmr/m/n' instead on input line 237.
-
-
-LaTeX Font Warning: Font shape `\OML/cmm/b/it' undefined
-(Font)              using `\OML/lmr/m/n' instead on input line 237.
-
-(/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
-File: mt-LatinModernRoman.cfg 2013/03/13 v1.0 microtype config. file: Latin Modern Roman (RS)
-)
-LaTeX Font Info:    Trying to load font information for \TU+LatinModernMath(2) on input line 237.
-LaTeX Font Info:    No file \TULatinModernMath(2).fd. on input line 237.
-LaTeX Font Info:    Trying to load font information for \TU+lmr on input line 237.
-LaTeX Font Info:    No file \TUlmr.fd. on input line 237.
-
-
-LaTeX Font Warning: Font shape `\TU/LatinModernMath(2)/b/n' undefined
-(Font)              using `\TU/lmr/m/n' instead on input line 237.
-
-
-LaTeX Font Warning: Font shape `\TU/lmr/m/n' undefined
-(Font)              using `\TU/lmr/m/n' instead on input line 237.
-
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Corrupted NFSS tables.
-wrong@fontshape ...message {Corrupted NFSS tables}
-                                                  error@fontshape else let f...
-l.237             \end{tabularx}
-                              
-(That was another \errmessage.)
-
-
-LaTeX Font Warning: Font shape `\TU/lmr/m/n' undefined
-(Font)              using `OT1/cmr/m/n' instead on input line 237.
-
-
-LaTeX Font Warning: Font shape `\TU/LatinModernMath(2)/b/n' undefined
-(Font)              using `\TU/lmr/m/n' instead on input line 237.
-
-LaTeX Font Info:    Trying to load font information for \TU+LatinModernMath(3) on input line 237.
-LaTeX Font Info:    No file \TULatinModernMath(3).fd. on input line 237.
-
-LaTeX Font Warning: Font shape `\TU/LatinModernMath(3)/b/n' undefined
-(Font)              using `\TU/lmr/m/n' instead on input line 237.
-
-
-Overfull \hbox (12.80002pt too wide) in alignment at lines 237--237
-[]
+Overfull \hbox (869.51323pt too wide) in alignment at lines 201--235
+ [][][] 
  []
 
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Extra }, or forgotten $.
-\TX@endtabularx ... }\the \TX@ftn \ifnum 0=`{\fi }
-                                                  \expandafter \expandafter ...
-l.237             \end{tabularx}
-                              
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 238--238
+|[]\TU/LatinModernSans(0)/b/n/14.4 Code|
+ []
 
-/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex:237: Missing $ inserted.
-<inserted text> 
-$
-l.237             \end{tabularx}
-                              
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-[6
-Missing character: There is no   (U+0000) in font LatinModernSans:mode=node;script=latn;language=dflt;+tlig;!
-] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 ) (../main/button.c) (../main/button.h [7]) (../main/LED_Group.c [8]) (../main/LED_Group.h [9]) (../main/LED_Group_Collection.c [10]) (../main/LED_Group_Collection.h [11]) (../main/Load_Cell.c [12]) (../main/Load_Cell.h [13]) (../main/main.c [14]) (../main/voltage.c) (../main/voltage.h) [15] (../main/main.ino [16]) [17]
-<schematic.pdf, id=786, 845.04684pt x 597.50787pt>
+Underfull \hbox (badness 10000) in paragraph at lines 397--397
+|[]\TU/LatinModernSans(0)/b/n/14.4 Schematic|
+ []
+
+<schematic.pdf, id=785, 845.04684pt x 597.50787pt>
 File: schematic.pdf Graphic file (type pdf)
 <use schematic.pdf>
-Package luatex.def Info: schematic.pdf  used on input line 401.
+Package luatex.def Info: schematic.pdf  used on input line 399.
 (luatex.def)             Requested size: 845.04478pt x 597.50641pt.
 File: schematic.pdf Graphic file (type pdf)
 <use schematic.pdf>
-Package luatex.def Info: schematic.pdf  used on input line 401.
+Package luatex.def Info: schematic.pdf  used on input line 399.
 (luatex.def)             Requested size: 845.04478pt x 597.50641pt.
-<schematic.pdf, id=789, page=1, 845.04684pt x 597.50787pt>
+<schematic.pdf, id=788, page=1, 845.04684pt x 597.50787pt>
 File: schematic.pdf Graphic file (type pdf)
 <use schematic.pdf, page 1>
-Package luatex.def Info: schematic.pdf , page1 used on input line 401.
+Package luatex.def Info: schematic.pdf , page1 used on input line 399.
 (luatex.def)             Requested size: 845.04478pt x 597.50641pt.
 File: schematic.pdf Graphic file (type pdf)
 <use schematic.pdf, page 1>
-Package luatex.def Info: schematic.pdf , page1 used on input line 401.
+Package luatex.def Info: schematic.pdf , page1 used on input line 399.
 (luatex.def)             Requested size: 845.08347pt x 597.53375pt.
- [18]
+[18]
 File: schematic.pdf Graphic file (type pdf)
 <use schematic.pdf, page 1>
-Package luatex.def Info: schematic.pdf , page1 used on input line 401.
-(luatex.def)             Requested size: 845.08347pt x 597.53375pt.
-File: schematic.pdf Graphic file (type pdf)
-<use schematic.pdf, page 1>
-Package luatex.def Info: schematic.pdf , page1 used on input line 401.
+Package luatex.def Info: schematic.pdf , page1 used on input line 399.
 (luatex.def)             Requested size: 845.08347pt x 597.53375pt.
 File: schematic.pdf Graphic file (type pdf)
 <use schematic.pdf, page 1>
-Package luatex.def Info: schematic.pdf , page1 used on input line 401.
+Package luatex.def Info: schematic.pdf , page1 used on input line 399.
+(luatex.def)             Requested size: 845.08347pt x 597.53375pt.
+File: schematic.pdf Graphic file (type pdf)
+<use schematic.pdf, page 1>
+Package luatex.def Info: schematic.pdf , page1 used on input line 399.
 (luatex.def)             Requested size: 845.08347pt x 597.53375pt.
  [19<./schematic.pdf>]
-<pcb.pdf, id=994, 845.04684pt x 597.50787pt>
+Underfull \hbox (badness 10000) in paragraph at lines 401--401
+|[]\TU/LatinModernSans(0)/b/n/14.4 Printed Cir-cuit Board|
+ []
+
+<pcb.pdf, id=993, 845.04684pt x 597.50787pt>
 File: pcb.pdf Graphic file (type pdf)
 <use pcb.pdf>
-Package luatex.def Info: pcb.pdf  used on input line 405.
+Package luatex.def Info: pcb.pdf  used on input line 403.
 (luatex.def)             Requested size: 845.04478pt x 597.50641pt.
 File: pcb.pdf Graphic file (type pdf)
 <use pcb.pdf>
-Package luatex.def Info: pcb.pdf  used on input line 405.
+Package luatex.def Info: pcb.pdf  used on input line 403.
 (luatex.def)             Requested size: 845.04478pt x 597.50641pt.
-<pcb.pdf, id=997, page=1, 845.04684pt x 597.50787pt>
+<pcb.pdf, id=996, page=1, 845.04684pt x 597.50787pt>
 File: pcb.pdf Graphic file (type pdf)
 <use pcb.pdf, page 1>
-Package luatex.def Info: pcb.pdf , page1 used on input line 405.
+Package luatex.def Info: pcb.pdf , page1 used on input line 403.
 (luatex.def)             Requested size: 845.04478pt x 597.50641pt.
 File: pcb.pdf Graphic file (type pdf)
 <use pcb.pdf, page 1>
-Package luatex.def Info: pcb.pdf , page1 used on input line 405.
+Package luatex.def Info: pcb.pdf , page1 used on input line 403.
 (luatex.def)             Requested size: 845.08347pt x 597.53375pt.
- [20]
+[20]
 File: pcb.pdf Graphic file (type pdf)
 <use pcb.pdf, page 1>
-Package luatex.def Info: pcb.pdf , page1 used on input line 405.
-(luatex.def)             Requested size: 845.08347pt x 597.53375pt.
-File: pcb.pdf Graphic file (type pdf)
-<use pcb.pdf, page 1>
-Package luatex.def Info: pcb.pdf , page1 used on input line 405.
+Package luatex.def Info: pcb.pdf , page1 used on input line 403.
 (luatex.def)             Requested size: 845.08347pt x 597.53375pt.
 File: pcb.pdf Graphic file (type pdf)
 <use pcb.pdf, page 1>
-Package luatex.def Info: pcb.pdf , page1 used on input line 405.
+Package luatex.def Info: pcb.pdf , page1 used on input line 403.
+(luatex.def)             Requested size: 845.08347pt x 597.53375pt.
+File: pcb.pdf Graphic file (type pdf)
+<use pcb.pdf, page 1>
+Package luatex.def Info: pcb.pdf , page1 used on input line 403.
 (luatex.def)             Requested size: 845.08347pt x 597.53375pt.
  [21<./pcb.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 440.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 440.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 438.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 438.
  (./TermThreeProject.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 440.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 440.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 438.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 438.
 
 
 Package rerunfilecheck Warning: File `TermThreeProject.out' has changed.
@@ -2593,19 +1666,19 @@ Package logreq Info: Writing requests to 'TermThreeProject.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 36002 strings out of 480991
- 244192,1648299 words of node,token memory allocated
+ 35898 strings out of 480991
+ 244171,1648299 words of node,token memory allocated
  649 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 6 attribute, 85 glue_spec, 6 attribute_list, 1 write nodes
-   avail lists: 1:7,2:5939,3:248,4:695,5:5173,6:77,7:9828,8:78,9:10400,10:38,11:511
- 51616 multiletter control sequences out of 65536+600000
- 113 fonts using 47847259 bytes
- 49i,18n,112p,1248b,1398s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/fonts/iosevka-ss15-fonts/iosevka-ss15-regular.ttf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf>
-Output written on TermThreeProject.pdf (23 pages, 809782 bytes).
+   avail lists: 1:9,2:5939,3:248,4:695,5:5176,6:77,7:10540,8:77,9:10400,10:38,11:511
+ 51543 multiletter control sequences out of 65536+600000
+ 109 fonts using 47527667 bytes
+ 49i,18n,112p,1248b,1408s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texlive/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/fonts/iosevka-ss15-fonts/iosevka-ss15-regular.ttf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf>
+Output written on TermThreeProject.pdf (23 pages, 806667 bytes).
 
-PDF statistics: 1078 PDF objects out of 1200 (max. 8388607)
- 923 compressed objects within 10 object streams
+PDF statistics: 1071 PDF objects out of 1200 (max. 8388607)
+ 919 compressed objects within 10 object streams
  708 named destinations out of 1000 (max. 131072)
  1 words of extra memory for PDF output out of 10000 (max. 100000000)
 
