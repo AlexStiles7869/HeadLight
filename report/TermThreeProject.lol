@@ -2,7 +2,7 @@
 \contentsline {lstlisting}{\numberline {2}Button header code.}{11}{lstlisting.2}%
 \contentsline {lstlisting}{\numberline {3}LED group code.}{12}{lstlisting.3}%
 \contentsline {lstlisting}{\numberline {4}LED group header code.}{13}{lstlisting.4}%
-\contentsline {lstlisting}{\numberline {5}.LED group collection code}{14}{lstlisting.5}%
+\contentsline {lstlisting}{\numberline {5}.LED group collection code.}{14}{lstlisting.5}%
 \contentsline {lstlisting}{\numberline {6}LED group collection header code.}{15}{lstlisting.6}%
 \contentsline {lstlisting}{\numberline {7}Load cell code.}{16}{lstlisting.7}%
 \contentsline {lstlisting}{\numberline {8}Load cell code.}{17}{lstlisting.8}%
