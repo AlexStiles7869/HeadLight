@@ -2184,10 +2184,12 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
-    <bcf:citekey order="1">emc</bcf:citekey>
-    <bcf:citekey order="2">ti:sloa034</bcf:citekey>
-    <bcf:citekey order="3">htc:tal221</bcf:citekey>
-    <bcf:citekey order="4">2017Arduino</bcf:citekey>
+    <bcf:citekey order="1">htc:tal221</bcf:citekey>
+    <bcf:citekey order="2">sf:pwm</bcf:citekey>
+    <bcf:citekey order="3">emc</bcf:citekey>
+    <bcf:citekey order="4">ti:sloa034</bcf:citekey>
+    <bcf:citekey order="5">htc:tal221</bcf:citekey>
+    <bcf:citekey order="6">2017Arduino</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

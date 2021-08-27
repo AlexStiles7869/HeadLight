@@ -115,9 +115,16 @@
 \fancyfoot[C]{Edward Manson \& Alex Stiles}
 
 \section{Introduction}
-    Cyclists often use lights for nighttime bicycle rides. These lights may be fixed to the bicycle or may not illuminate where the rider wishes. A light that illuminates in a direction based on the force applied to a load cell was designed using a microcontroller. When the rider turns their head, the brightness of one LED array increases and the brightness of the other decreases. An Arduino shield printed circuit board (PCB) was designed, and software for the Arduino was written.
+    Cyclists often use lights for nighttime bicycle rides. The cyclist may fix these lights on the bicycle handles or their helmet. These lights often do not illuminate where the rider wishes. When biking at night, a rider may attempt to view potential obstacles by looking to the side but not be able to focus directly on where they are looking due to the wide range of light.
+
+    This report details the prototyping process for a startup that has developed a possible solution to this problem. The developed prototype is a headlight that illuminates two distinct LED arrays pointing in different directions based on the cyclist's head position; when the rider turns their head, the brightness of one LED array increases while the brightness of the other decreases. We used an Arduino Uno microcontroller and developed a corresponding shield printed circuit board (PCB) and software to create the prototype. 
 
 \section{Design Context}
+    A startup has produced an initial concept for a new headlight for cyclists to help them navigate the road at night. The working name for this concept is 'HeadLight'. The currently envisioned design utilises a load cell to change the focus of light when moving your head while riding. By focusing the light when moving your head, the HeadLight aims to make it easier to see objects without light flooding your peripheral vision. These features are present in the rudimentary concept sketch provided by the startup to help with development (figure \ref{fig:sketch}). The startup has asked us to develop a functional prototype as a proof of concept to see if the idea is feasible.
+
+    To evaluate the feasibility of this design, we opted for a medium-fidelity prototype. The prototype will include a microcontroller with an added shield that independently controls two LED arrays depending on load cell readings. Considerations relating to the physical form will be left out. If deemed feasible, the final product will also involve a microcontroller controlling two distinct groups of LEDs pointing leftward and rightward. Still, the startup will refine the physical construction, and they will likely change the implementation details, such as the microcontroller used and the form of the shield. 
+
+    These requirements and specifications are specifically for the HeadLight prototype, not for the final product. Therefore, the scope of these requirements and specifications are very constrained. Considerations relating to other road users, the road code, and the physical nature of the device are intentionally excluded.
     \noindent
     \begin{figure}[H]
         \centering
@@ -128,7 +135,66 @@
 
 \section{Requirements \& Specifications}
     \subsection{Requirements}
+    The requirements for the HeadLight prototype are as follows:
+    \begin{enumerate}[label=R\arabic*, start=1]
+        \item Response
+            \begin{enumerate}[label*=.\arabic*]
+                \item The headlight must detect the force applied by the rider's head-turning and record this information.
+                \item The headlight must respond to the riders head movement from \SI{-90}{\degree} (leftwards) to  \SI{90}{\degree} (rightwards) and track their movement.
+            \end{enumerate}
+        \item Illumination \label{req:r2}
+            \begin{enumerate}[label*=.\arabic*]
+                \item The headlight must be bright enough to show obstacles at a distance of \SI{20}{\m} effectively. \label{req:r2.1}
+                \item The headlight must be able to focus in a specific direction.
+            \end{enumerate}
+        \item Operating Modes 
+            \begin{enumerate}[label*=.\arabic*]
+                \item `Follow'---light follows head as they turn.
+                \item `Full'---light is at maximum brightness to achieve \ref{req:r2}
+            \end{enumerate}
+        \item External Functionality
+            \begin{enumerate}[label*=.\arabic*]
+                \item The prototype must provide the capability to get the voltage reading from the load cell.
+            \end{enumerate}
+    \end{enumerate}
+
     \subsection{Specifications}
+    The specifications below relate to the requirements above on a one to one basis. We provide additional details in sub specifications. The specifications for the HeadLight prototype are as follows:
+    \begin{enumerate}[label=S\arabic*, start=1]
+        \item Response
+            \begin{enumerate}[label*=.\arabic*]
+                \item The prototype must use an Arduino as a 'controller', which reads the load cell and outputs appropriate PWM signals. The current team has experience working with Arduino hardware and software making this the optimal choice.
+                \begin{enumerate}[label*=.\arabic*]
+                    \item The prototype should include an Arduino Sketch, which implements all the required functionality and is easily maintainable and extensible.
+                \end{enumerate}
+                \item The prototype must use a TAL221 strain gauge to detect deviations in head movement.
+                \begin{enumerate}[label*=.\arabic*]
+                    \item The input should be sufficiently conditioned and amplified to be readable by the Arduino. (TAL221 with \SI{5}{\volt} excitation voltage, outputs \SI{3}{\milli\volt} when peaked at \SI{100}{\gram}, therefore requiring amplification \cite{htc:tal221}).
+                    \begin{enumerate}[label*=.\arabic*]
+                        \item To facilitate the amplification and filtering, the prototype must take the form of an Arduino Shield. We will use an instrumentation amplifier for amplification and a passive lossless filter for filtering.
+                    \end{enumerate}
+                \end{enumerate}
+            \end{enumerate}
+        \item Illumination
+            \begin{enumerate}[label*=.\arabic*]
+                \item The prototype must power six high-power LEDs to provide the light required to meet \ref{req:r2.1}.
+                \begin{enumerate}[label*=.\arabic*]
+                    \item The PWM output from \ref{spec:s2.2} should be inputted into a MOSFET gate, allowing more current from the Arduino's 5V output in proportion to the Arduino PWM output. MOSFETs are required as the PWM pins can only supply 40mA, insufficient for the high power LEDs we are utilising \cite{sf:pwm}.
+                \end{enumerate}
+                \item The LEDs should be organised evenly into two separate LED arrays that the Arduino can individually modify using PWM signals. \label{spec:s2.2}
+            \end{enumerate}
+        \item Operating Modes 
+            \begin{enumerate}[label*=.\arabic*]
+                \item The prototype should implement modes for the HeadLight and provide a method to switch between them, likely a button.
+                \begin{enumerate}[label*=.\arabic*]
+                    \item The Arduino should appropriately debounce this button to reduce the chance of erroneous triggering.
+                \end{enumerate}
+            \end{enumerate}
+        \item External Functionality
+            \begin{enumerate}[label*=.\arabic*]
+                \item The shield prototype should include an additional digital / PWM output for extensibility purposes.
+            \end{enumerate}
+    \end{enumerate}
 
 \section{Design Overview \& Rationale}
     \noindent
