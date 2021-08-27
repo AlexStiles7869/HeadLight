@@ -19,8 +19,8 @@
 \contentsline {paragraph}{}{5}{paragraph*.11}%
 \contentsline {section}{\numberline {5}Testing}{5}{section.5}%
 \contentsline {section}{\numberline {6}Conclusions}{5}{section.6}%
-\contentsline {section}{Appendices}{6}{section*.12}%
-\contentsline {section}{\numberline {A}Applications of the Design Toolkit}{6}{appendix.a.A}%
-\contentsline {section}{\numberline {B}Code}{8}{appendix.a.B}%
-\contentsline {section}{\numberline {C}Schematic}{19}{appendix.a.C}%
-\contentsline {section}{\numberline {D}Printed Circuit Board}{21}{appendix.a.D}%
+\contentsline {section}{Appendices}{7}{section*.12}%
+\contentsline {section}{\numberline {A}Applications of the Design Toolkit}{7}{appendix.a.A}%
+\contentsline {section}{\numberline {B}Code}{9}{appendix.a.B}%
+\contentsline {section}{\numberline {C}Schematic}{20}{appendix.a.C}%
+\contentsline {section}{\numberline {D}Printed Circuit Board}{22}{appendix.a.D}%
