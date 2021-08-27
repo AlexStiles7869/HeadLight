@@ -3,7 +3,7 @@
 \usepackage{textcomp, gensymb, amsmath, mathtools, siunitx, unicode-math}
 % Page layout
 \usepackage[a4paper, margin=20mm, headheight=12.0pt]{geometry}
-\usepackage{fancyhdr, multicol, graphicx, caption, tabu, longtable, float, booktabs, tabularx, listings, xcolor, pdfpages, subcaption, titling, titlesec, enumitem, url, currency, pdflscape}
+\usepackage{fancyhdr, multicol, graphicx, caption, tabu, longtable, float, booktabs, tabularx, listings, xcolor, pdfpages, subcaption, titling, titlesec, enumitem, url, currency, pdflscape, ltxtable}
 \usepackage[toc,page]{appendix}
 \usepackage[style=ieee, backend=biber]{biblatex}
 \usepackage[thinc]{esdiff}
@@ -117,6 +117,13 @@
     \subsection{Specifications}
 
 \section{Design Overview \& Rationale}
+    \noindent
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.75\textwidth]{block_diagram.png}
+        \caption{A block diagram of the function of the HeadLight}
+        \label{fig:sketch}
+    \end{figure}
     \subsection{Arduino Shield}
         \paragraph{}
         A load cell is used to measure the force of the head rotation, which has an internal Wheatstone bridge. The output from the Wheatstone bridge goes into an instrumentation amplifier. The instrumentation amplifier consists of non-inverting amplifiers on the output of the Wheatstone bridge, which then goes into a differential amplifier, as shown in figure \ref{fig:inamp}. The output of the differential amplifier goes into an LC low pass filter to remove high-frequency noise.
@@ -189,26 +196,32 @@
 \newpage
 \begin{appendices}
     \section{Applications of the Design Toolkit}
-        \begin{table}[h]
+        \begin{table}[H]
             \centering
             \caption{Applications of the Design Toolkit.} \label{table:designtoolkit}
             \begin{tabularx}{\linewidth}{l l X}
+                \toprule\endhead
+                \midrule\multicolumn{2}{r}{\itshape continues on next page}\\\midrule\endfoot
+                \bottomrule\endlastfoot
                 \toprule
                 Tool Type & Tool Name & Where/How Used \\
                 \midrule
                 Strategy & Divide \& Conquer & Divide and conquer was used to split up the hardware design into:
-                \begin{itemize}
-                    \item Instrumentation amplifier
-                    \item LED arrays and driver
-                    \item \SI{2.5}{\volt} reference
-                    \item LC filter
-                \end{itemize}  \\
+                % \begin{itemize}
+                %     \item Instrumentation amplifier
+                %     \item LED arrays and driver
+                %     \item \SI{2.5}{\volt} reference
+                %     \item LC filter
+                % \end{itemize}  \\
+                \\
+                Design Principle & PCB layout & The layout of the PCB was done with the aim of complying with the PCB design rules, e.g. Having components neatly lined up, minimising acute angles of tracks, increasing clearance between components and tracks, and having high current tracks where needed. \\
+                Design Principle & PCB layout & The layout of the PCB was done with the aim of complying with the PCB design rules, e.g. Having components neatly lined up, minimising acute angles of tracks, increasing clearance between components and tracks, and having high current tracks where needed. \\
+                Design Principle & PCB layout & The layout of the PCB was done with the aim of complying with the PCB design rules, e.g. Having components neatly lined up, minimising acute angles of tracks, increasing clearance between components and tracks, and having high current tracks where needed. \\
                 Design Principle & PCB layout & The layout of the PCB was done with the aim of complying with the PCB design rules, e.g. Having components neatly lined up, minimising acute angles of tracks, increasing clearance between components and tracks, and having high current tracks where needed. \\
                 Design Principle & Schematic layout & The schematic was done with the aim to follow the layout guidelines, for example, using labels, using power ports, separating major parts of the circuit, and ensuring that the labels are clear and easy to read. \\
                 Design Principle / Strategy & Modularity & The code was written with the aim to be modular, e.g. multiple header files and task specific files. \\
                 Design Principle & Testability & Test points were added around the circuit to aid in easy testing of the circuit's function. \\
-                Strategy & Get another perspective & Both the PCB and the schematic were checked by people other than the designer, to ensure that everything was clear and obvious. \\
-                Design Principle &  &  \\
+                Strategy & Get another perspective & Both the PCB and the schematic were checked by people other than the designer. \\
                 Design Principle &  &  \\
                 Design Principle &  &  \\
                 Building Block & Amplifier & An instrumentation amplifier was constructed out of operational amplifiers to appropriately amplify the signal from the Wheatstone bridge in the load cell. \\
