@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2021.1.13)  27 AUG 2021 18:23
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2021.1.13)  27 AUG 2021 18:37
  restricted system commands enabled.
  file:line:error style messages enabled.
 **"/home/edward/OneDrive/2021 - First Pro/ENEL200/Term 3/Term 3 Project/HeadLight/report/TermThreeProject.tex"
@@ -1482,12 +1482,12 @@ Package luatex.def Info: headlamp-project-concept.png  used on input line 99.
  [2] [3]
 File: headlamp-project-concept.png Graphic file (type png)
 <use headlamp-project-concept.png>
-Package luatex.def Info: headlamp-project-concept.png  used on input line 124.
+Package luatex.def Info: headlamp-project-concept.png  used on input line 125.
 (luatex.def)             Requested size: 362.77264pt x 256.37263pt.
 <block_diagram.png, id=164, 985.6825pt x 742.775pt>
 File: block_diagram.png Graphic file (type png)
 <use block_diagram.png>
-Package luatex.def Info: block_diagram.png  used on input line 137.
+Package luatex.def Info: block_diagram.png  used on input line 138.
 (luatex.def)             Requested size: 362.77264pt x 273.37172pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -1496,18 +1496,18 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 <inamp.png, id=170, 1738.495pt x 744.7825pt>
 File: inamp.png Graphic file (type png)
 <use inamp.png>
-Package luatex.def Info: inamp.png  used on input line 147.
+Package luatex.def Info: inamp.png  used on input line 148.
 (luatex.def)             Requested size: 483.69687pt x 207.2194pt.
 <vref.png, id=172, 634.37pt x 498.86375pt>
 File: vref.png Graphic file (type png)
 <use vref.png>
-Package luatex.def Info: vref.png  used on input line 155.
+Package luatex.def Info: vref.png  used on input line 156.
 (luatex.def)             Requested size: 362.77264pt x 285.29156pt.
  [2<./block_diagram.png><./inamp.png>]
 <ledarray.png, id=181, 1625.07124pt x 668.4975pt>
 File: ledarray.png Graphic file (type png)
 <use ledarray.png>
-Package luatex.def Info: ledarray.png  used on input line 163.
+Package luatex.def Info: ledarray.png  used on input line 164.
 (luatex.def)             Requested size: 362.77264pt x 149.23239pt.
 
 Underfull \vbox (badness 4001) has occurred while \output is active []
@@ -1521,72 +1521,72 @@ Missing character: There is no   (U+202F) in font LatinModernSans:mode=node;sc
 <schematic.pdf, id=989, 845.04684pt x 597.50787pt>
 File: schematic.pdf Graphic file (type pdf)
 <use schematic.pdf>
-Package luatex.def Info: schematic.pdf  used on input line 368.
+Package luatex.def Info: schematic.pdf  used on input line 369.
 (luatex.def)             Requested size: 845.04478pt x 597.50641pt.
 File: schematic.pdf Graphic file (type pdf)
 <use schematic.pdf>
-Package luatex.def Info: schematic.pdf  used on input line 368.
+Package luatex.def Info: schematic.pdf  used on input line 369.
 (luatex.def)             Requested size: 845.04478pt x 597.50641pt.
 <schematic.pdf, id=992, page=1, 845.04684pt x 597.50787pt>
 File: schematic.pdf Graphic file (type pdf)
 <use schematic.pdf, page 1>
-Package luatex.def Info: schematic.pdf , page1 used on input line 368.
+Package luatex.def Info: schematic.pdf , page1 used on input line 369.
 (luatex.def)             Requested size: 845.04478pt x 597.50641pt.
 File: schematic.pdf Graphic file (type pdf)
 <use schematic.pdf, page 1>
-Package luatex.def Info: schematic.pdf , page1 used on input line 368.
+Package luatex.def Info: schematic.pdf , page1 used on input line 369.
 (luatex.def)             Requested size: 845.08347pt x 597.53375pt.
  [22]
 File: schematic.pdf Graphic file (type pdf)
 <use schematic.pdf, page 1>
-Package luatex.def Info: schematic.pdf , page1 used on input line 368.
+Package luatex.def Info: schematic.pdf , page1 used on input line 369.
 (luatex.def)             Requested size: 845.08347pt x 597.53375pt.
 File: schematic.pdf Graphic file (type pdf)
 <use schematic.pdf, page 1>
-Package luatex.def Info: schematic.pdf , page1 used on input line 368.
+Package luatex.def Info: schematic.pdf , page1 used on input line 369.
 (luatex.def)             Requested size: 845.08347pt x 597.53375pt.
 File: schematic.pdf Graphic file (type pdf)
 <use schematic.pdf, page 1>
-Package luatex.def Info: schematic.pdf , page1 used on input line 368.
+Package luatex.def Info: schematic.pdf , page1 used on input line 369.
 (luatex.def)             Requested size: 845.08347pt x 597.53375pt.
  [23<./schematic.pdf>]
 <pcb.pdf, id=1195, 845.04684pt x 597.50787pt>
 File: pcb.pdf Graphic file (type pdf)
 <use pcb.pdf>
-Package luatex.def Info: pcb.pdf  used on input line 372.
+Package luatex.def Info: pcb.pdf  used on input line 373.
 (luatex.def)             Requested size: 845.04478pt x 597.50641pt.
 File: pcb.pdf Graphic file (type pdf)
 <use pcb.pdf>
-Package luatex.def Info: pcb.pdf  used on input line 372.
+Package luatex.def Info: pcb.pdf  used on input line 373.
 (luatex.def)             Requested size: 845.04478pt x 597.50641pt.
 <pcb.pdf, id=1198, page=1, 845.04684pt x 597.50787pt>
 File: pcb.pdf Graphic file (type pdf)
 <use pcb.pdf, page 1>
-Package luatex.def Info: pcb.pdf , page1 used on input line 372.
+Package luatex.def Info: pcb.pdf , page1 used on input line 373.
 (luatex.def)             Requested size: 845.04478pt x 597.50641pt.
 File: pcb.pdf Graphic file (type pdf)
 <use pcb.pdf, page 1>
-Package luatex.def Info: pcb.pdf , page1 used on input line 372.
+Package luatex.def Info: pcb.pdf , page1 used on input line 373.
 (luatex.def)             Requested size: 845.08347pt x 597.53375pt.
  [24]
 File: pcb.pdf Graphic file (type pdf)
 <use pcb.pdf, page 1>
-Package luatex.def Info: pcb.pdf , page1 used on input line 372.
+Package luatex.def Info: pcb.pdf , page1 used on input line 373.
 (luatex.def)             Requested size: 845.08347pt x 597.53375pt.
 File: pcb.pdf Graphic file (type pdf)
 <use pcb.pdf, page 1>
-Package luatex.def Info: pcb.pdf , page1 used on input line 372.
+Package luatex.def Info: pcb.pdf , page1 used on input line 373.
 (luatex.def)             Requested size: 845.08347pt x 597.53375pt.
 File: pcb.pdf Graphic file (type pdf)
 <use pcb.pdf, page 1>
-Package luatex.def Info: pcb.pdf , page1 used on input line 372.
+Package luatex.def Info: pcb.pdf , page1 used on input line 373.
 (luatex.def)             Requested size: 845.08347pt x 597.53375pt.
  [25<./pcb.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 407.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 407.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 408.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 408.
  (./TermThreeProject.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 407.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 407.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 408.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 408.
 Package rerunfilecheck Info: File `TermThreeProject.out' has not changed.
 (rerunfilecheck)             Checksum: 01F1B642F463BD44E7A55DF08B6F26F8;2741.
 
@@ -1605,10 +1605,10 @@ Here is how much of LuaTeX's memory you used:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 14 attribute, 86 glue_spec, 14 attribute_list, 1 write, 8 pdf_action nodes
    avail lists: 1:3,2:5939,3:310,4:695,5:5173,6:111,7:12024,8:170,9:10400,10:38,11:511
  51681 multiletter control sequences out of 65536+600000
- 112 fonts using 47922795 bytes
+ 112 fonts using 47922927 bytes
  49i,18n,112p,1267b,1376s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmsans10-oblique.otf></usr/share/fonts/iosevka-ss15-fonts/iosevka-ss15-regular.ttf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/share/texlive/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf>
-Output written on TermThreeProject.pdf (28 pages, 937437 bytes).
+Output written on TermThreeProject.pdf (28 pages, 938000 bytes).
 
 PDF statistics: 1280 PDF objects out of 1440 (max. 8388607)
  1116 compressed objects within 12 object streams
