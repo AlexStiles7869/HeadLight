@@ -2187,6 +2187,7 @@
     <bcf:citekey order="1">emc</bcf:citekey>
     <bcf:citekey order="2">ti:sloa034</bcf:citekey>
     <bcf:citekey order="3">htc:tal221</bcf:citekey>
+    <bcf:citekey order="4">2017Arduino</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

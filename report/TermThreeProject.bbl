@@ -314,6 +314,36 @@
       \verb https://www.emcstandards.co.uk/files/part_4_planes_corrected_29_june_17.pdf
       \endverb
     \endentry
+    \entry{2017Arduino}{online}{}
+      \name{author}{1}{}{%
+        {{hash=d5f69bbb518392d2f05c1c793fe58f74}{%
+           family={sastorer},
+           familyi={s\bibinitperiod}}}%
+      }
+      \strng{namehash}{d5f69bbb518392d2f05c1c793fe58f74}
+      \strng{fullhash}{d5f69bbb518392d2f05c1c793fe58f74}
+      \strng{bibnamehash}{d5f69bbb518392d2f05c1c793fe58f74}
+      \strng{authorbibnamehash}{d5f69bbb518392d2f05c1c793fe58f74}
+      \strng{authornamehash}{d5f69bbb518392d2f05c1c793fe58f74}
+      \strng{authorfullhash}{d5f69bbb518392d2f05c1c793fe58f74}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{Arduino Uno - C++ 11 STD Library - \#2 by system - Installation \& Troubleshooting - Arduino Forum}}
+      \field{urlday}{27}
+      \field{urlmonth}{8}
+      \field{urlyear}{2021}
+      \field{year}{2017}
+      \field{urldateera}{ce}
+      \true{nocite}
+      \verb{urlraw}
+      \verb https://forum.arduino.cc/t/arduino-uno-c-11-std-library/468141/2
+      \endverb
+      \verb{url}
+      \verb https://forum.arduino.cc/t/arduino-uno-c-11-std-library/468141/2
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
