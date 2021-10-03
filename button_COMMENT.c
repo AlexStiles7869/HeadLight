@@ -20,7 +20,8 @@ void button_clicked(Button_t* button) {
     button->callbackFunction();
 }
 
-void debounce_state(Button_t* button, bool read_button_state, long unsigned current_time) {    |\label{line:button_start}|
+void debounce_state(Button_t* button, bool read_button_state, long unsigned current_time) {
+    //    |\label{line:button_start}|
     if (read_button_state != button->last_state) {
         button->last_trigger_time = current_time;
     }
@@ -35,4 +36,5 @@ void debounce_state(Button_t* button, bool read_button_state, long unsigned curr
     }
 
     button->last_state = read_button_state;
-} |\label{line:button_end}|
+} 
+// |\label{line:button_end}|

@@ -1,4 +1,4 @@
-k ai/**
+/**
  * @file LED_Group.h
  * @author Alex Stiles
  * @brief Provides the types and function prototypes required for the LED groups.
